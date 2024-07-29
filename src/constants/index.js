@@ -26,10 +26,11 @@ import {
   raindrop,
   recording01,
   recording03,
-  roadmap1,
-  roadmap2,
-  roadmap3,
-  roadmap4,
+  
+  design,
+  testing,
+  sec,
+  plan,
   searchMd,
   slack,
   sliders04,
@@ -51,8 +52,8 @@ export const navigation = [
   },
   {
     id: "2",
-    title: "How to use",
-    url: "#how-to-use",
+    title: "Why Choose Us",
+    url: "#Why-Choose-Us",
   },
   {
     id: "3",
@@ -61,14 +62,14 @@ export const navigation = [
   },
   {
     id: "4",
-    title: "New account",
+    title: "case studies/portfolio",
     url: "#signup",
     onlyMobile: true,
   },
   {
     id: "5",
-    title: "Sign in",
-    url: "#login",
+    title: "contact us",
+    url: "#contact us",
     onlyMobile: true,
   },
 ];
@@ -80,9 +81,10 @@ export const notificationImages = [notification4, notification3, notification2];
 export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
 
 export const brainwaveServices = [
-  "Photo generating",
-  "Photo enhance",
-  "Seamless Integration",
+  "Web Development",
+  "Web Security",
+  "DevOps",
+  "Automation",
 ];
 
 export const brainwaveServicesIcons = [
@@ -92,40 +94,40 @@ export const brainwaveServicesIcons = [
   chromecast,
   sliders04,
 ];
-
+    
 export const roadmap = [
   {
     id: "0",
-    title: "Voice recognition",
-    text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
+    title: "Discovery and Planning",
+    text: "We start by understanding your business goals, challenges, and requirements through in-depth consultations. We create a detailed project plan outlining the timeline, milestones, and deliverables to ensure a clear path forward.",
     date: "May 2023",
     status: "done",
-    imageUrl: roadmap1,
+    imageUrl: plan,
     colorful: true,
   },
   {
     id: "1",
-    title: "Gamification",
-    text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
+    title: "Design and Development",
+    text: "We develop wireframes and prototypes to visualize the layout and functionality of your project, Our developers build robust and scalable solutions using the latest technologies and best practices, Our designers craft intuitive and visually appealing interfaces that enhance user experience.",
     date: "May 2023",
     status: "progress",
-    imageUrl: roadmap2,
+    imageUrl: design,
   },
   {
     id: "2",
-    title: "Chatbot customization",
-    text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
+    title: "Testing and Deployment",
+    text: "We implement automated tests to quickly identify and fix any issues, ensuring code quality and functionality, Our QA team conducts thorough manual testing to verify that everything works as intended across different devices and browsers, Once everything is tested and approved, we deploy your project to the live environment, ensuring a smooth transition. ",
     date: "May 2023",
     status: "done",
-    imageUrl: roadmap3,
+    imageUrl: testing,
   },
   {
     id: "3",
-    title: "Integration with APIs",
-    text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
+    title: "Support and Maintenance",
+    text: "We continuously monitor your solution to detect and address any issues proactively, We provide regular updates and enhancements to keep your solution up-to-date with the latest features and security patches, Our dedicated support team is always available to assist you with any questions or issues you may encounter.",
     date: "May 2023",
     status: "progress",
-    imageUrl: roadmap4,
+    imageUrl: sec,
   },
 ];
 

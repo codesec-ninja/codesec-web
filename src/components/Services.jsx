@@ -1,6 +1,6 @@
 import Section from "./Section";
 import Heading from "./Heading";
-import { service1, service2, service3, check } from "../assets";
+import { ai, service2, service3, check } from "../assets";
 import { brainwaveServices, brainwaveServicesIcons } from "../constants";
 import {
   PhotoChatMessage,
@@ -13,11 +13,11 @@ import Generating from "./Generating";
 
 const Services = () => {
   return (
-    <Section id="how-to-use">
+    <Section id="Why-Choose-Us">
       <div className="container">
         <Heading
-          title="Generative AI made for creators."
-          text="Brainwave unlocks the potential of AI-powered applications"
+          title="Why Choose Us"
+          text="codesec unlocks the potential of AI-powered applications"
         />
 
         <div className="relative">
@@ -28,14 +28,14 @@ const Services = () => {
                 width={800}
                 alt="Smartest AI"
                 height={730}
-                src={service1}
+                src={ai}
               />
             </div>
 
             <div className="relative z-1 max-w-[17rem] ml-auto">
-              <h4 className="h4 mb-4">Smartest AI</h4>
-              <p className="body-2 mb-[3rem] text-n-3">
-                Brainwave unlocks the potential of AI-powered applications
+              <h4 className="h4 mb-4">About Us</h4>
+              <p className="body-3 mb-[3rem] text-n-3">
+              At CodeSec, we are a dedicated team of passionate professionals specializing in web development, web security, DevOps, and automation. With a commitment to excellence and innovation, we strive to deliver top-tier solutions that empower businesses to achieve their goals and stay ahead in a competitive market
               </p>
               <ul className="body-2">
                 {brainwaveServices.map((item, index) => (

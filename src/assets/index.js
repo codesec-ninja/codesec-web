@@ -2,6 +2,11 @@ import brainwave from "./brainwave.svg";
 import codesec from "./code-hero.svg";
 import check from "./check.svg";
 import brainwaveSymbol from "./brainwave-symbol.svg";
+import codesecSymbol from "./code-sec-lk.svg";
+import plan from "./plan.png";
+import design from "./design.png";
+import testing from "./testing.png";
+import sec from "./sec.png";
 import n8nSymbol from "./n8n.png";
 import brainwaveWhiteSymbol from "./brainwave-symbol-white.svg";
 import play from "./play.svg";
@@ -39,6 +44,7 @@ import raindrop from "./collaboration/raindrop.png";
 import slack from "./collaboration/slack.png";
 
 import service1 from "./services/service-1.png";
+import ai from "./services/ai.png";
 import service2 from "./services/service-2.png";
 import service3 from "./services/service-3.png";
 
@@ -81,7 +87,13 @@ import twitter from "./socials/twitter.svg";
 
 export {
   brainwave,
+  codesecSymbol,
+  design,
   n8nSymbol,
+  ai,
+  testing,
+  sec,
+  plan,
   codesec,
   check,
   check2,
