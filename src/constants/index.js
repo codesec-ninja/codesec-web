@@ -208,9 +208,9 @@ export const collabApps = [
 export const pricing = [
   {
     id: "0",
-    title: "Basic Web Development",
+    title: "Basic Web",
     description: "Launch your brand with a professional website.",
-    price: "99+" ,
+    price: "99+",
     features: [
       "Custom Design Template",
       "Responsive Layout",
@@ -219,9 +219,9 @@ export const pricing = [
   },
   {
     id: "1",
-    title: "Web Development + Cybersecurity",
+    title: "Web + Security",
     description: "Build a stunning website with security features.",
-    price: "1000+",
+    price: "999+",
     features: [
       "Custom Website Design",
       "SSL Certificate Installation",
@@ -230,9 +230,9 @@ export const pricing = [
   },
   {
     id: "2",
-    title: "Full Stack Development + Cybersecurity + Automation",
+    title: "Full Stack + Security",
     description: "Comprehensive solution for digital optimization.",
-    price: "3000+",
+    price: "4999+",
     features: [
       "Full Stack Website Development",
       "Advanced Cybersecurity Protocols",
@@ -240,6 +240,7 @@ export const pricing = [
     ],
   },
 ];
+
 
 
 export const benefits = [
