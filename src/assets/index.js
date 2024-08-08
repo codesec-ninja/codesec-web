@@ -34,13 +34,14 @@ import heroBackground from "./hero/hero-background.jpg";
 
 import curve1 from "./collaboration/curve-1.svg";
 import curve2 from "./collaboration/curve-2.svg";
+import sheet from "./collaboration/sheet.png";
 import discord from "./collaboration/discord.png";
 import figma from "./collaboration/figma.png";
-import framer from "./collaboration/framer.png";
+import framer from "./collaboration/chatgpt.png";
 import notion from "./collaboration/notion.png";
-import photoshop from "./collaboration/photoshop.png";
-import protopie from "./collaboration/protopie.png";
-import raindrop from "./collaboration/raindrop.png";
+import insta from "./collaboration/insta.png";
+import x2 from "./collaboration/x2.png";
+import raindrop from "./collaboration/yt.png";
 import slack from "./collaboration/slack.png";
 
 import service1 from "./services/service-1.png";
@@ -80,7 +81,7 @@ import benefitIcon5 from "./benefits/icons-5.png";
 import benefitImage2 from "./benefits/image-2.png";
 
 import discordBlack from "./socials/discord.svg";
-import facebook from "./socials/facebook.svg";
+import link from "./socials/link.svg";
 import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
@@ -89,6 +90,7 @@ export {
   brainwave,
   codesecSymbol,
   design,
+  sheet,
   n8nSymbol,
   ai,
   testing,
@@ -125,8 +127,8 @@ export {
   figma,
   framer,
   notion,
-  photoshop,
-  protopie,
+  insta,
+  x2,
   raindrop,
   slack,
   service1,
@@ -160,7 +162,7 @@ export {
   benefitIcon6,
   benefitImage2,
   discordBlack,
-  facebook,
+  link,
   instagram,
   telegram,
   twitter,

@@ -1,12 +1,11 @@
 import Section from "./Section";
 import Heading from "./Heading";
-import { ai, service2, service3, check } from "../assets";
+import {  service2, service3, check, service1 } from "../assets";
 import { brainwaveServices, brainwaveServicesIcons } from "../constants";
 import {
   PhotoChatMessage,
   Gradient,
-  VideoBar,
-  VideoChatMessage,
+  
 } from "./design/Services";
 
 import Generating from "./Generating";
@@ -28,7 +27,7 @@ const Services = () => {
                 width={800}
                 alt="Smartest AI"
                 height={730}
-                src={ai}
+                src={service1}
               />
             </div>
 
@@ -66,10 +65,10 @@ const Services = () => {
               </div>
 
               <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
-                <h4 className="h4 mb-4">Photo editing</h4>
+                <h4 className="h4 mb-4">Expertise and Innovation</h4>
                 <p className="body-2 mb-[3rem] text-n-3">
-                  Automatically enhance your photos using our AI app&apos;s
-                  photo editing feature. Try it now!
+                Our team of experts excels in web development, cybersecurity, and automation, We utilize cutting-edge technology to deliver innovative and effective solutions.
+
                 </p>
               </div>
 
@@ -78,10 +77,9 @@ const Services = () => {
 
             <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
               <div className="py-12 px-4 xl:px-8">
-                <h4 className="h4 mb-4">Video generation</h4>
+                <h4 className="h4 mb-4">Commitment to Excellence</h4>
                 <p className="body-2 mb-[2rem] text-n-3">
-                  The world’s most powerful AI photo and video art generation
-                  engine. What will you create?
+                We prioritize client satisfaction with transparent communication and collaboration, A proven track record of success highlights our commitment to quality, Enjoy ongoing support and continuous improvement as your business grows.
                 </p>
 
                 <ul className="flex items-center justify-between">
@@ -101,7 +99,7 @@ const Services = () => {
                             : ""
                         }
                       >
-                        <img src={item} width={24} height={24} alt={item} />
+                       
                       </div>
                     </li>
                   ))}
@@ -117,8 +115,8 @@ const Services = () => {
                   alt="Scary robot"
                 />
 
-                <VideoChatMessage />
-                <VideoBar />
+                
+                
               </div>
             </div>
           </div>

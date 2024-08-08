@@ -1,7 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
-
 import { codesec } from "../assets";
 import { navigation } from "../constants";
 import Button from "./Button";
@@ -68,12 +67,16 @@ const Header = () => {
           <HamburgerMenu />
         </nav>
 
+        {/* Modify the AppShip link to open in a new tab */}
         <a
-          href="#signup"
+          href="https://www.appship.me" // Change this to the full URL
+          target="_blank" // Open link in a new tab
+          rel="noopener noreferrer" // Security reasons
           className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
         >
-          R&D
+          AppShip
         </a>
+        
         <Button className="hidden lg:flex" href="#login">
           Contact Us 
         </Button>

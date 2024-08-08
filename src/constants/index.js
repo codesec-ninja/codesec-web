@@ -10,8 +10,8 @@ import {
   disc02,
   discord,
   discordBlack,
-  facebook,
-  figma,
+  link,
+  sheet,
   file02,
   framer,
   homeSmile,
@@ -20,13 +20,12 @@ import {
   notification3,
   notification4,
   notion,
-  photoshop,
+  insta,
   plusSquare,
-  protopie,
+  x2,
   raindrop,
   recording01,
   recording03,
-  
   design,
   testing,
   sec,
@@ -62,7 +61,7 @@ export const navigation = [
   },
   {
     id: "4",
-    title: "case studies/portfolio",
+    title: "AppShip",
     url: "#signup",
     onlyMobile: true,
   },
@@ -81,10 +80,7 @@ export const notificationImages = [notification4, notification3, notification2];
 export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
 
 export const brainwaveServices = [
-  "Web Development",
-  "Web Security",
-  "DevOps",
-  "Automation",
+  
 ];
 
 export const brainwaveServicesIcons = [
@@ -153,8 +149,8 @@ export const collabContent = [
 export const collabApps = [
   {
     id: "0",
-    title: "Figma",
-    icon: figma,
+    title: "sheet",
+    icon: sheet,
     width: 26,
     height: 36,
   },
@@ -181,15 +177,15 @@ export const collabApps = [
   },
   {
     id: "4",
-    title: "Photoshop",
-    icon: photoshop,
+    title: "insta",
+    icon: insta,
     width: 34,
     height: 34,
   },
   {
     id: "5",
-    title: "Protopie",
-    icon: protopie,
+    title: "x",
+    icon: x2,
     width: 34,
     height: 34,
   },
@@ -212,38 +208,39 @@ export const collabApps = [
 export const pricing = [
   {
     id: "0",
-    title: "Basic",
-    description: "AI chatbot, personalized recommendations",
-    price: "0",
+    title: "Basic Web Development",
+    description: "Launch your brand with a professional website.",
+    price: "99+" ,
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "Custom Design Template",
+      "Responsive Layout",
+      "Basic SEO Setup",
     ],
   },
   {
     id: "1",
-    title: "Premium",
-    description: "Advanced AI chatbot, priority support, analytics dashboard",
-    price: "9.99",
+    title: "Web Development + Cybersecurity",
+    description: "Build a stunning website with security features.",
+    price: "1000+",
     features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
+      "Custom Website Design",
+      "SSL Certificate Installation",
+      "Security Audit & Protection",
     ],
   },
   {
     id: "2",
-    title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
-    price: null,
+    title: "Full Stack Development + Cybersecurity + Automation",
+    description: "Comprehensive solution for digital optimization.",
+    price: "3000+",
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "Full Stack Website Development",
+      "Advanced Cybersecurity Protocols",
+      "Process Automation Tools",
     ],
   },
 ];
+
 
 export const benefits = [
   {
@@ -309,13 +306,13 @@ export const socials = [
     id: "1",
     title: "Twitter",
     iconUrl: twitter,
-    url: "#",
+    url: "https://x.com/Codesec_me",
   },
   {
     id: "2",
     title: "Instagram",
     iconUrl: instagram,
-    url: "#",
+    url: "https://www.instagram.com/codesec.me/",
   },
   {
     id: "3",
@@ -325,8 +322,8 @@ export const socials = [
   },
   {
     id: "4",
-    title: "Facebook",
-    iconUrl: facebook,
-    url: "#",
+    title: "linkedin",
+    iconUrl: link,
+    url: "https://www.linkedin.com/in/codesec-me/",
   },
 ];
