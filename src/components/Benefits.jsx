@@ -17,12 +17,11 @@ const Benefits = () => {
         <div className="flex flex-wrap gap-10 mb-10">
           {benefits.map((item) => (
             <div
-              className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
-              style={{
-                backgroundImage: `url(${item.backgroundUrl})`,
-              }}
-              key={item.id}
-            >
+            className="relative p-4 md:max-w-[24rem] absolute inset-0 rounded-2xl bg-gradient-to-r from-[#9b59b6] to-[#4b0082] bg-size-200 bg-pos-0 transition-all duration-500 hover:bg-pos-100 rounded-lg animated-border"
+            key={item.id}
+          >
+            
+            
               <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
                 <h5 className="h5 mb-5">{item.title}</h5>
                 <p className="body-2 mb-6 text-n-3">{item.text}</p>

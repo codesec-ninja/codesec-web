@@ -114,6 +114,7 @@ export const roadmap = [
     date: "May 2023",
     status: "progress",
     imageUrl: design,
+    colorful: true,
   },
   {
     id: "2",
@@ -122,6 +123,7 @@ export const roadmap = [
     date: "May 2023",
     status: "done",
     imageUrl: testing,
+    colorful: true,
   },
   {
     id: "3",
@@ -130,6 +132,7 @@ export const roadmap = [
     date: "May 2023",
     status: "progress",
     imageUrl: sec,
+    colorful: true,
   },
 ];
 
@@ -257,6 +260,7 @@ export const benefits = [
     backgroundUrl: benefitCard1,
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
+    colorful: true,
   },
   {
     id: "1",
@@ -265,7 +269,7 @@ export const benefits = [
     backgroundUrl: benefitCard2,
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
-    light: true,
+    colorful: true,
   },
   {
     id: "2",
@@ -274,15 +278,17 @@ export const benefits = [
     backgroundUrl: benefitCard3,
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
+    colorful: true,
   },
   {
     id: "3",
     title: "CI/CD Pipelines (Jenkins)",
     text: "Implementing CI/CD pipelines to automate the build, test, and deployment processes, ensuring faster, more reliable software releases.",
-    backgroundUrl: benefitCard4,
+    
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
-    light: true,
+    colorful: true,
+    className: "border-4 border-white rounded-lg shadow-lg"
   },
   {
     id: "4",
@@ -291,6 +297,7 @@ export const benefits = [
     backgroundUrl: benefitCard5,
     iconUrl: benefitIcon6,
     imageUrl: benefitImage2,
+    colorful: true,
   },
   {
     id: "5",
@@ -299,6 +306,7 @@ export const benefits = [
     backgroundUrl: benefitCard6,
     iconUrl: benefitIcon5,
     imageUrl: benefitImage2,
+    colorful: true,
   },
 ];
 
