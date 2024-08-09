@@ -25,7 +25,7 @@ import {
   benefitCard1,
   benefitCard2,
   benefitCard3,
-  benefitCard4,
+  
   benefitCard5,
   benefitCard6,
   x2,
@@ -52,8 +52,8 @@ export const navigation = [
   },
   {
     id: "1",
-    title: "Pricing",
-    url: "#pricing",
+    title: "Blogs",
+    url: "https://blogs.codesec.me",
   },
   {
     id: "2",
@@ -74,7 +74,7 @@ export const navigation = [
   {
     id: "5",
     title: "contact us",
-    url: "#contact us",
+    url: "https://contact.codesec.me",
     onlyMobile: true,
   },
 ];
@@ -219,18 +219,20 @@ export const pricing = [
     id: "0",
     title: "Basic Web",
     description: "Launch your brand with a professional website.",
-    price: "99+",
+    
     features: [
       "Custom Design Template",
       "Responsive Layout",
       "Basic SEO Setup",
+      
     ],
+    
   },
   {
     id: "1",
     title: "Web + Security",
     description: "Build a stunning website with security features.",
-    price: "999+",
+    
     features: [
       "Custom Website Design",
       "SSL Certificate Installation",
@@ -241,7 +243,7 @@ export const pricing = [
     id: "2",
     title: "Full Stack + Security",
     description: "Comprehensive solution for digital optimization.",
-    price: "4999+",
+    
     features: [
       "Full Stack Website Development",
       "Advanced Cybersecurity Protocols",

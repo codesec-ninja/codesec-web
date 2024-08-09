@@ -77,7 +77,7 @@ const Header = () => {
           AppShip
         </a>
         
-        <Button className="hidden lg:flex" href="#login">
+        <Button className="hidden lg:flex" href="https://contact.codesec.me">
           Contact Us 
         </Button>
 
