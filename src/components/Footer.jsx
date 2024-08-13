@@ -16,6 +16,11 @@ const Footer = () => {
           <li>
             <a href="https://contact.codesec.me/terms-and-conditions" className="hover:underline me-4 md:me-6" target="_blank" rel="noopener noreferrer">Terms and Conditions</a>
           </li>
+          <li>
+            <a href="https://contact.codesec.me/our-team" className="hover:underline me-4 md:me-6" target="_blank" rel="noopener noreferrer">Meet-OurTeam</a>
+          </li>
+
+          
         </ul>
         <ul className="flex gap-5 flex-wrap">
           {socials.map((item) => (
