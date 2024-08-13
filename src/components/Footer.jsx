@@ -11,10 +11,10 @@ const Footer = () => {
         <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
           
           <li>
-            <a href="https://policy.codesec.me" className="hover:underline me-4 md:me-6" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+            <a href="https://contact.codesec.me/privacy-policy" className="hover:underline me-4 md:me-6" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
           </li>
           <li>
-            <a href="https://terms.codesec.me" className="hover:underline me-4 md:me-6" target="_blank" rel="noopener noreferrer">Terms and Conditions</a>
+            <a href="https://contact.codesec.me/terms-and-conditions" className="hover:underline me-4 md:me-6" target="_blank" rel="noopener noreferrer">Terms and Conditions</a>
           </li>
         </ul>
         <ul className="flex gap-5 flex-wrap">
