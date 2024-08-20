@@ -69,7 +69,7 @@ const Header = () => {
 
         {/* Modify the AppShip link to open in a new tab */}
         <a
-          href="https://www.appship.me" // Change this to the full URL
+          href="https://appship.me" // Change this to the full URL
           target="_blank" // Open link in a new tab
           rel="noopener noreferrer" // Security reasons
           className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
