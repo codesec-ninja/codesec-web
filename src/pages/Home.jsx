@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { Shield, Users, Code, Brain, ArrowRight, Github, Twitter, Discord } from 'lucide-react'
+import { Shield, Users, Code, Brain, ArrowRight, Github, Twitter, Disc as Discord } from 'lucide-react'
 import GlassCard from '../components/ui/GlassCard'
 import Button from '../components/ui/Button'
 
