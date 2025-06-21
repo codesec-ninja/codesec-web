@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
 import { codesec } from "../assets";
@@ -9,7 +9,8 @@ import { HamburgerMenu } from "./design/Header";
 import { useState } from "react";
 
 const Header = () => {
-  const pathname = useLocation();
+  const location = useLocation();
+  const navigate = useNavigate();
   const [openNavigation, setOpenNavigation] = useState(false);
 
   const toggleNavigation = () => {
@@ -22,11 +23,35 @@ const Header = () => {
     }
   };
 
-  const handleClick = () => {
+  const handleClick = (item) => {
     if (!openNavigation) return;
 
     enablePageScroll();
     setOpenNavigation(false);
+  };
+
+  const handleNavigation = (item) => {
+    if (item.external) {
+      window.open(item.url, '_blank', 'noopener noreferrer');
+    } else if (item.url.startsWith('#')) {
+      if (location.pathname !== '/') {
+        navigate('/');
+        setTimeout(() => {
+          const element = document.querySelector(item.url);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 100);
+      } else {
+        const element = document.querySelector(item.url);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    } else {
+      navigate(item.url);
+    }
+    handleClick(item);
   };
 
   return (
@@ -36,9 +61,12 @@ const Header = () => {
       }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <a className="block w-[12rem] xl:mr-8" href="#hero">
+        <button 
+          className="block w-[12rem] xl:mr-8" 
+          onClick={() => navigate('/')}
+        >
           <img src={codesec} width={190} height={40} alt="codesec" />
-        </a>
+        </button>
 
         <nav
           className={`${
@@ -47,37 +75,34 @@ const Header = () => {
         >
           <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
             {navigation.map((item) => (
-              <a
+              <button
                 key={item.id}
-                href={item.url}
-                onClick={handleClick}
+                onClick={() => handleNavigation(item)}
                 className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
                   item.onlyMobile ? "lg:hidden" : ""
                 } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
-                  item.url === pathname.hash
+                  (item.url === location.pathname) || 
+                  (item.url.startsWith('#') && location.pathname === '/' && location.hash === item.url)
                     ? "z-2 lg:text-n-1"
                     : "lg:text-n-1/50"
                 } lg:leading-5 lg:hover:text-n-1 xl:px-12`}
               >
                 {item.title}
-              </a>
+              </button>
             ))}
           </div>
 
           <HamburgerMenu />
         </nav>
 
-        {/* Modify the AppShip link to open in a new tab */}
-        <a
-          href="https://appship.me" // Change this to the full URL
-          target="_blank" // Open link in a new tab
-          rel="noopener noreferrer" // Security reasons
+        <button
+          onClick={() => window.open('https://appship.me', '_blank', 'noopener noreferrer')}
           className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
         >
           AppShip
-        </a>
+        </button>
         
-        <Button className="hidden lg:flex" href="https://contact.codesec.me">
+        <Button className="hidden lg:flex" onClick={() => navigate('/contact')}>
           Contact Us 
         </Button>
 

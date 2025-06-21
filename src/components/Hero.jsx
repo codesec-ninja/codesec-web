@@ -5,12 +5,14 @@ import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
 import { heroIcons } from "../constants";
 import { ScrollParallax } from "react-just-parallax";
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import Generating from "./Generating";
 import Notification from "./Notification";
 import CompanyLogos from "./CompanyLogos";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
+  const navigate = useNavigate();
 
   return (
     <Section
@@ -38,7 +40,7 @@ const Hero = () => {
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
           Solutions in Web Development, Security, DevOps, Automation, and B2B, B2C SaaS Apps..
           </p>
-          <Button href="/pricing" white>
+          <Button onClick={() => navigate('/contact')} white>
           Contact Us
           </Button>
         </div>

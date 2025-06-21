@@ -1,8 +1,11 @@
 import { check } from "../assets";
 import { pricing } from "../constants";
+import { useNavigate } from "react-router-dom";
 import Button from "./Button";
 
 const PricingList = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="flex gap-[1rem] max-lg:flex-wrap">
       {pricing.map((item) => (
@@ -29,7 +32,7 @@ const PricingList = () => {
 
           <Button
             className="w-full mb-6"
-            href={item.price ? "/pricing" : "https://contact.codesec.me"}
+            onClick={() => navigate('/contact')}
             white={!!item.price}
           >
             {item.price ? "Get started" : "Contact us"}

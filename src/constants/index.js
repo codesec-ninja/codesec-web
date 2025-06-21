@@ -54,6 +54,7 @@ export const navigation = [
     id: "1",
     title: "Blogs",
     url: "https://blogs.codesec.me",
+    external: true,
   },
   {
     id: "2",
@@ -68,13 +69,14 @@ export const navigation = [
   {
     id: "4",
     title: "AppShip",
-    url: "#signup",
+    url: "https://appship.me",
+    external: true,
     onlyMobile: true,
   },
   {
     id: "5",
-    title: "contact us",
-    url: "https://contact.codesec.me",
+    title: "Contact Us",
+    url: "/contact",
     onlyMobile: true,
   },
 ];
