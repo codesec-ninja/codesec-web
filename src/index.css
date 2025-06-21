@@ -19,8 +19,64 @@
 
 @layer base {
   body {
-    @apply font-sans bg-n-8 text-n-1 text-base;
+    @apply font-sans bg-gradient-to-br from-n-8 via-n-8 to-n-7 text-n-1 text-base;
   }
+}
+
+/* Glassmorphism utilities */
+.glass {
+  @apply bg-white/10 backdrop-blur-md border border-white/20;
+}
+
+.glass-dark {
+  @apply bg-n-8/50 backdrop-blur-md border border-n-6/30;
+}
+
+/* Text gradient utility */
+.text-gradient {
+  @apply bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent;
+}
+
+/* Animated gradient backgrounds */
+.animated-gradient {
+  background: linear-gradient(-45deg, #9b59b6, #3498db, #2ecc71, #f39c12);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Hover effects */
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(156, 89, 182, 0.3), 0 0 40px rgba(52, 152, 219, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-n-8;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gradient-to-b from-purple-600 to-cyan-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply from-purple-700 to-cyan-700;
 }
 
 .rotate-45 {
@@ -86,6 +142,7 @@
 .-rotate-360 {
   @apply rotate-[-360deg]
 }
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -115,3 +172,38 @@
   animation: bounce 2s infinite;
 }
 
+/* Line clamp utility */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Pulse glow effect */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(156, 89, 182, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(156, 89, 182, 0.8), 0 0 30px rgba(52, 152, 219, 0.6);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
