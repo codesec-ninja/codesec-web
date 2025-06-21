@@ -1,65 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --font-sora: "Sora", sans-serif;
-  --font-code: "Source Code Pro", monospace;
-  --font-grotesk: "Space Grotesk", sans-serif;
-  color-scheme: dark;
-}
-
 * {
-  scroll-behavior: smooth
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@layer base {
-  body {
-    @apply font-sans bg-gradient-to-br from-n-8 via-n-8 to-n-7 text-n-1 text-base;
-  }
-}
-
-/* Glassmorphism utilities */
-.glass {
-  @apply bg-white/10 backdrop-blur-md border border-white/20;
-}
-
-.glass-dark {
-  @apply bg-n-8/50 backdrop-blur-md border border-n-6/30;
-}
-
-/* Text gradient utility */
-.text-gradient {
-  @apply bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent;
-}
-
-/* Animated gradient backgrounds */
-.animated-gradient {
-  background: linear-gradient(-45deg, #9b59b6, #3498db, #2ecc71, #f39c12);
-  background-size: 400% 400%;
-  animation: gradientShift 15s ease infinite;
-}
-
-@keyframes gradientShift {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-/* Hover effects */
-.hover-glow:hover {
-  box-shadow: 0 0 20px rgba(156, 89, 182, 0.3), 0 0 40px rgba(52, 152, 219, 0.2);
-  transition: box-shadow 0.3s ease;
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0a0a0a;
+  color: white;
+  overflow-x: hidden;
 }
 
 /* Custom scrollbar */
@@ -68,142 +22,123 @@
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-n-8;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-gradient-to-b from-purple-600 to-cyan-600 rounded-full;
+  background: linear-gradient(to bottom, #8b5cf6, #06b6d4);
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply from-purple-700 to-cyan-700;
+  background: linear-gradient(to bottom, #7c3aed, #0891b2);
 }
 
-.rotate-45 {
-  @apply rotate-[45deg]
-}
-
-.rotate-90 {
-  @apply rotate-[90deg]
-}
-
-.rotate-135 {
-  @apply rotate-[135deg]
-}
-
-.rotate-180 {
-  @apply rotate-[180deg]
-}
-
-.rotate-225 {
-  @apply rotate-[225deg]
-}
-
-.rotate-270 {
-  @apply rotate-[270deg]
-}
-
-.rotate-315 {
-  @apply rotate-[315deg]
-}
-
-.rotate-360 {
-  @apply rotate-[360deg]
-}
-
-.-rotate-45 {
-  @apply rotate-[-45deg]
-}
-
-.-rotate-90 {
-  @apply rotate-[-90deg]
-}
-
-.-rotate-135 {
-  @apply rotate-[-135deg]
-}
-
-.-rotate-180 {
-  @apply rotate-[-180deg]
-}
-
-.-rotate-225 {
-  @apply rotate-[-225deg]
-}
-
-.-rotate-270 {
-  @apply rotate-[-270deg]
-}
-
-.-rotate-315 {
-  @apply rotate-[-315deg]
-}
-
-.-rotate-360 {
-  @apply rotate-[-360deg]
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
+/* Animations */
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
   }
-  to {
-    opacity: 1;
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
   }
 }
 
-.animate-fade-in {
-  animation: fade-in 1s ease-in-out;
+.animate-blob {
+  animation: blob 7s infinite;
 }
 
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Glassmorphism utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-hover:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Custom utilities */
+.text-gradient {
+  background: linear-gradient(to right, #8b5cf6, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-cyber {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.shadow-glow {
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+}
+
+.shadow-glow-cyan {
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+}
+
+/* Loading spinner */
+.spinner {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 2px solid #06b6d4;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive design helpers */
+@media (max-width: 640px) {
+  .text-responsive {
+    font-size: clamp(1.5rem, 4vw, 2rem);
   }
 }
 
-.animate-bounce {
-  animation: bounce 2s infinite;
+/* Focus styles */
+.focus-visible:focus-visible {
+  outline: 2px solid #06b6d4;
+  outline-offset: 2px;
 }
 
-/* Line clamp utility */
-.line-clamp-3 {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+/* Selection styles */
+::selection {
+  background: rgba(6, 182, 212, 0.3);
+  color: white;
 }
 
-/* Floating animation */
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
 
-.animate-float {
-  animation: float 3s ease-in-out infinite;
+/* Hide scrollbar for certain elements */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-/* Pulse glow effect */
-@keyframes pulse-glow {
-  0%, 100% {
-    box-shadow: 0 0 5px rgba(156, 89, 182, 0.5);
-  }
-  50% {
-    box-shadow: 0 0 20px rgba(156, 89, 182, 0.8), 0 0 30px rgba(52, 152, 219, 0.6);
-  }
-}
-
-.animate-pulse-glow {
-  animation: pulse-glow 2s ease-in-out infinite;
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
 }

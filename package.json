@@ -1,5 +1,5 @@
 {
-  "name": "codesec",
+  "name": "cyberninjas-community",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,11 +10,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-just-parallax": "^3.1.16",
     "react-router-dom": "^6.26.1",
-    "scroll-lock": "^2.1.5",
+    "react-markdown": "^9.0.1",
+    "react-syntax-highlighter": "^15.5.0",
+    "lucide-react": "^0.344.0",
+    "framer-motion": "^10.18.0",
+    "react-hot-toast": "^2.4.1",
+    "date-fns": "^3.0.6",
+    "react-hook-form": "^7.48.2",
+    "react-dropzone": "^14.2.3",
     "vite": "^5.3.5"
   },
   "devDependencies": {
