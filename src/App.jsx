@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { AuthProvider } from './hooks/useAuth'
+import { AuthProvider } from './hooks/useAuth.jsx'
 import Layout from './components/layout/Layout'
 import Home from './pages/Home'
 import Join from './pages/Join'

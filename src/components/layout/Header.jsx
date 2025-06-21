@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Menu, X, Shield, User, LogOut } from 'lucide-react'
-import { useAuth } from '../../hooks/useAuth'
+import { useAuth } from '../../hooks/useAuth.jsx'
 import Button from '../ui/Button'
 import Avatar from '../ui/Avatar'
 
