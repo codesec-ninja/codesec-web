@@ -1,4 +1,3 @@
-```jsx
 import { useLocation, useNavigate } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
@@ -57,7 +56,7 @@ const Header = () => {
 
   return (
     <div
-      className={\`fixed top-0 left-0 w-full z-50 border-b border-n-6/50 lg:bg-n-8/80 lg:backdrop-blur-md ${
+      className={`fixed top-0 left-0 w-full z-50 border-b border-n-6/50 lg:bg-n-8/80 lg:backdrop-blur-md ${
         openNavigation ? "bg-n-8" : "bg-n-8/80 backdrop-blur-md"
       }`}
     >
@@ -70,7 +69,7 @@ const Header = () => {
         </button>
 
         <nav
-          className={\`${
+          className={`${
             openNavigation ? "flex" : "hidden"
           } fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8/95 backdrop-blur-md lg:static lg:flex lg:mx-auto lg:bg-transparent`}
         >
@@ -79,7 +78,7 @@ const Header = () => {
               <button
                 key={item.id}
                 onClick={() => handleNavigation(item)}
-                className={\`block relative font-code text-xl md:text-2xl lg:text-xs uppercase text-n-1 transition-all duration-300 hover:text-gradient hover:bg-gradient-to-r hover:from-purple-400 hover:to-cyan-400 hover:bg-clip-text hover:text-transparent ${
+                className={`block relative font-code text-xl md:text-2xl lg:text-xs uppercase text-n-1 transition-all duration-300 hover:text-gradient hover:bg-gradient-to-r hover:from-purple-400 hover:to-cyan-400 hover:bg-clip-text hover:text-transparent ${
                   item.onlyMobile ? "lg:hidden" : ""
                 } px-4 py-4 md:py-6 lg:py-6 lg:-mr-0.25 lg:font-semibold ${
                   (item.url === location.pathname) || 
@@ -125,4 +124,3 @@ const Header = () => {
 };
 
 export default Header;
-```

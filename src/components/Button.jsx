@@ -1,4 +1,3 @@
-```jsx
 import ButtonSvg from "../assets/svg/ButtonSvg";
 
 const Button = ({ className, href, onClick, children, px, white, size = "md" }) => {
@@ -10,7 +9,7 @@ const Button = ({ className, href, onClick, children, px, white, size = "md" }) 
     xl: "h-14 px-10 text-lg md:h-16 md:px-12 md:text-xl"
   };
 
-  const classes = \`button relative inline-flex items-center justify-center transition-colors hover:text-color-1 ${
+  const classes = `button relative inline-flex items-center justify-center transition-colors hover:text-color-1 ${
     sizeClasses[size]
   } ${px || ""} ${white ? "text-n-8" : "text-n-1"} ${className || ""}`;
   
@@ -34,4 +33,3 @@ const Button = ({ className, href, onClick, children, px, white, size = "md" }) 
 };
 
 export default Button;
-```
