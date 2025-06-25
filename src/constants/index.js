@@ -47,32 +47,37 @@ export const navigation = [
   {
     id: "0",
     title: "Community",
-    url: "#community",
+    url: "/community",
   },
   {
     id: "1",
     title: "Projects",
-    url: "#projects",
+    url: "/projects",
   },
   {
     id: "2",
     title: "Research",
-    url: "#research",
+    url: "/research",
   },
   {
     id: "3",
     title: "Resources",
-    url: "#resources",
+    url: "/resources",
   },
   {
     id: "4",
+    title: "Blog",
+    url: "/blog",
+  },
+  {
+    id: "5",
     title: "GitHub",
     url: "https://github.com/codesec-community",
     external: true,
     onlyMobile: true,
   },
   {
-    id: "5",
+    id: "6",
     title: "Join Us",
     url: "/join",
     onlyMobile: true,

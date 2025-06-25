@@ -1,0 +1,278 @@
+import MDXLayout from '../components/MDXLayout'
+import { motion } from 'framer-motion'
+import { BookOpen, Video, Code, Download, ExternalLink, Users, Star, Clock } from 'lucide-react'
+
+<MDXLayout 
+  title="Learning Resources" 
+  subtitle="Access comprehensive learning materials, research papers, and community-driven content to advance your cybersecurity knowledge"
+>
+
+<motion.div 
+  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12"
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.3 }}
+>
+  <div className="p-6 bg-gradient-to-br from-purple-900/20 to-transparent backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
+    <BookOpen className="w-10 h-10 text-purple-400 mx-auto mb-3" />
+    <div className="text-2xl font-bold text-color-1 mb-1">200+</div>
+    <div className="text-sm text-n-3">Tutorials</div>
+  </div>
+  
+  <div className="p-6 bg-gradient-to-br from-cyan-900/20 to-transparent backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
+    <Video className="w-10 h-10 text-cyan-400 mx-auto mb-3" />
+    <div className="text-2xl font-bold text-color-2 mb-1">150+</div>
+    <div className="text-sm text-n-3">Video Courses</div>
+  </div>
+  
+  <div className="p-6 bg-gradient-to-br from-green-900/20 to-transparent backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
+    <Code className="w-10 h-10 text-green-400 mx-auto mb-3" />
+    <div className="text-2xl font-bold text-color-3 mb-1">500+</div>
+    <div className="text-sm text-n-3">Code Examples</div>
+  </div>
+  
+  <div className="p-6 bg-gradient-to-br from-yellow-900/20 to-transparent backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
+    <Download className="w-10 h-10 text-yellow-400 mx-auto mb-3" />
+    <div className="text-2xl font-bold text-color-4 mb-1">100+</div>
+    <div className="text-sm text-n-3">Tools & Scripts</div>
+  </div>
+</motion.div>
+
+## Learning Paths
+
+Choose your learning journey based on your experience level and interests:
+
+### 🎯 Cybersecurity Fundamentals
+**Perfect for beginners entering the cybersecurity field**
+
+<div className="p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl mb-6">
+  <div className="flex items-center justify-between mb-4">
+    <div className="flex items-center gap-3">
+      <div className="px-3 py-1 bg-green-500/20 text-green-400 border border-green-500/30 rounded-full text-xs font-semibold">
+        Beginner
+      </div>
+      <div className="text-sm text-n-4">
+        <Clock className="w-4 h-4 inline mr-1" />
+        4 weeks • 12 modules
+      </div>
+    </div>
+    <div className="flex items-center gap-1 text-yellow-400">
+      <Star className="w-4 h-4 fill-current" />
+      <span className="text-sm">4.8</span>
+    </div>
+  </div>
+  
+  <h4 className="h6 mb-3 text-color-1">Core Topics Covered:</h4>
+  <ul className="space-y-2 text-n-3 mb-4">
+    <li>• Introduction to Information Security</li>
+    <li>• Network Security Fundamentals</li>
+    <li>• Cryptography Basics</li>
+    <li>• Risk Assessment and Management</li>
+    <li>• Security Policies and Procedures</li>
+    <li>• Incident Response Fundamentals</li>
+  </ul>
+  
+  <div className="flex gap-3">
+    <button className="px-4 py-2 bg-gradient-to-r from-purple-600 to-cyan-600 text-white text-sm font-semibold rounded-lg hover:from-purple-700 hover:to-cyan-700 transition-all duration-300">
+      Start Learning
+    </button>
+    <button className="px-4 py-2 bg-n-7 hover:bg-n-6 text-n-1 text-sm font-semibold rounded-lg transition-colors duration-300">
+      Preview
+    </button>
+  </div>
+</div>
+
+### 🤖 AI Security Research
+**Advanced topics for experienced professionals**
+
+<div className="p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl mb-6">
+  <div className="flex items-center justify-between mb-4">
+    <div className="flex items-center gap-3">
+      <div className="px-3 py-1 bg-red-500/20 text-red-400 border border-red-500/30 rounded-full text-xs font-semibold">
+        Advanced
+      </div>
+      <div className="text-sm text-n-4">
+        <Clock className="w-4 h-4 inline mr-1" />
+        8 weeks • 24 modules
+      </div>
+    </div>
+    <div className="flex items-center gap-1 text-yellow-400">
+      <Star className="w-4 h-4 fill-current" />
+      <span className="text-sm">4.9</span>
+    </div>
+  </div>
+  
+  <h4 className="h6 mb-3 text-color-2">Advanced Topics:</h4>
+  <ul className="space-y-2 text-n-3 mb-4">
+    <li>• Machine Learning for Threat Detection</li>
+    <li>• Adversarial Machine Learning</li>
+    <li>• Deep Learning Security Applications</li>
+    <li>• AI-Powered Vulnerability Discovery</li>
+    <li>• Automated Incident Response</li>
+    <li>• Research Methodologies</li>
+  </ul>
+  
+  <div className="flex gap-3">
+    <button className="px-4 py-2 bg-gradient-to-r from-purple-600 to-cyan-600 text-white text-sm font-semibold rounded-lg hover:from-purple-700 hover:to-cyan-700 transition-all duration-300">
+      Start Learning
+    </button>
+    <button className="px-4 py-2 bg-n-7 hover:bg-n-6 text-n-1 text-sm font-semibold rounded-lg transition-colors duration-300">
+      Prerequisites
+    </button>
+  </div>
+</div>
+
+### 🔧 Penetration Testing Mastery
+**Hands-on ethical hacking and penetration testing**
+
+<div className="p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl mb-6">
+  <div className="flex items-center justify-between mb-4">
+    <div className="flex items-center gap-3">
+      <div className="px-3 py-1 bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 rounded-full text-xs font-semibold">
+        Intermediate
+      </div>
+      <div className="text-sm text-n-4">
+        <Clock className="w-4 h-4 inline mr-1" />
+        6 weeks • 18 modules
+      </div>
+    </div>
+    <div className="flex items-center gap-1 text-yellow-400">
+      <Star className="w-4 h-4 fill-current" />
+      <span className="text-sm">4.7</span>
+    </div>
+  </div>
+  
+  <h4 className="h6 mb-3 text-color-3">Practical Skills:</h4>
+  <ul className="space-y-2 text-n-3 mb-4">
+    <li>• Reconnaissance and Information Gathering</li>
+    <li>• Vulnerability Assessment Techniques</li>
+    <li>• Exploitation Frameworks and Tools</li>
+    <li>• Post-Exploitation and Persistence</li>
+    <li>• Web Application Security Testing</li>
+    <li>• Report Writing and Communication</li>
+  </ul>
+  
+  <div className="flex gap-3">
+    <button className="px-4 py-2 bg-gradient-to-r from-purple-600 to-cyan-600 text-white text-sm font-semibold rounded-lg hover:from-purple-700 hover:to-cyan-700 transition-all duration-300">
+      Start Learning
+    </button>
+    <button className="px-4 py-2 bg-n-7 hover:bg-n-6 text-n-1 text-sm font-semibold rounded-lg transition-colors duration-300">
+      Lab Access
+    </button>
+  </div>
+</div>
+
+## Resource Categories
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+  <div className="p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl">
+    <BookOpen className="w-8 h-8 text-purple-400 mb-3" />
+    <h4 className="h6 mb-2 text-color-1">Documentation & Guides</h4>
+    <p className="body-2 text-n-3 mb-4">Comprehensive guides, best practices, and step-by-step tutorials</p>
+    <div className="flex items-center justify-between text-sm">
+      <span className="text-n-4">200+ resources</span>
+      <a href="#" className="text-color-1 hover:text-n-1 transition-colors">
+        Browse All <ExternalLink className="w-3 h-3 inline ml-1" />
+      </a>
+    </div>
+  </div>
+  
+  <div className="p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl">
+    <Video className="w-8 h-8 text-cyan-400 mb-3" />
+    <h4 className="h6 mb-2 text-color-2">Video Tutorials</h4>
+    <p className="body-2 text-n-3 mb-4">Interactive video courses and live workshop recordings</p>
+    <div className="flex items-center justify-between text-sm">
+      <span className="text-n-4">150+ videos</span>
+      <a href="#" className="text-color-2 hover:text-n-1 transition-colors">
+        Watch Now <ExternalLink className="w-3 h-3 inline ml-1" />
+      </a>
+    </div>
+  </div>
+  
+  <div className="p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl">
+    <Code className="w-8 h-8 text-green-400 mb-3" />
+    <h4 className="h6 mb-2 text-color-3">Code Examples</h4>
+    <p className="body-2 text-n-3 mb-4">Practical code samples, scripts, and implementation examples</p>
+    <div className="flex items-center justify-between text-sm">
+      <span className="text-n-4">500+ examples</span>
+      <a href="#" className="text-color-3 hover:text-n-1 transition-colors">
+        View Code <ExternalLink className="w-3 h-3 inline ml-1" />
+      </a>
+    </div>
+  </div>
+  
+  <div className="p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl">
+    <Download className="w-8 h-8 text-yellow-400 mb-3" />
+    <h4 className="h6 mb-2 text-color-4">Tools & Scripts</h4>
+    <p className="body-2 text-n-3 mb-4">Ready-to-use security tools, automation scripts, and utilities</p>
+    <div className="flex items-center justify-between text-sm">
+      <span className="text-n-4">100+ tools</span>
+      <a href="#" className="text-color-4 hover:text-n-1 transition-colors">
+        Download <ExternalLink className="w-3 h-3 inline ml-1" />
+      </a>
+    </div>
+  </div>
+</div>
+
+## Featured Resources
+
+### 📚 Essential Reading List
+
+**"The Art of Cybersecurity: A Comprehensive Guide"**  
+*Community-authored handbook covering fundamental to advanced topics*  
+⭐ 4.9/5 • 50,000+ downloads • Updated monthly
+
+**"AI in Cybersecurity: Research and Applications"**  
+*Latest research findings and practical applications of AI in security*  
+⭐ 4.8/5 • 25,000+ downloads • Peer-reviewed content
+
+**"Zero Trust Architecture Implementation Guide"**  
+*Step-by-step guide for implementing zero trust in enterprise environments*  
+⭐ 4.7/5 • 30,000+ downloads • Industry best practices
+
+### 🎥 Popular Video Series
+
+**"Cybersecurity Fundamentals Masterclass"**  
+*20-hour comprehensive video course for beginners*  
+👥 15,000+ students • 🕒 Self-paced • 📜 Certificate included
+
+**"Advanced Penetration Testing Techniques"**  
+*Hands-on video tutorials with real-world scenarios*  
+👥 8,000+ students • 🕒 12 weeks • 🏆 Industry recognized
+
+**"AI Security Research Seminar Series"**  
+*Weekly seminars featuring leading researchers*  
+👥 5,000+ attendees • 🕒 Live sessions • 💬 Interactive Q&A
+
+## Community Contributions
+
+Our resources are created and maintained by the community:
+
+- **Expert Contributors** - Industry professionals and researchers
+- **Peer Review Process** - Quality assurance through community review
+- **Regular Updates** - Content updated based on latest threats and techniques
+- **Multilingual Support** - Resources available in multiple languages
+
+### How to Contribute
+
+1. **Submit Content** - Share your knowledge through tutorials, guides, or tools
+2. **Review Materials** - Help maintain quality through peer review
+3. **Translate Content** - Make resources accessible to global community
+4. **Provide Feedback** - Help improve existing resources
+
+<div className="text-center mt-12">
+  <motion.div
+    className="inline-block"
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+  >
+    <a 
+      href="/join" 
+      className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-cyan-600 text-white font-semibold rounded-xl hover:from-purple-700 hover:to-cyan-700 transition-all duration-300 shadow-lg"
+    >
+      Access All Resources
+    </a>
+  </motion.div>
+</div>
+
+</MDXLayout>
