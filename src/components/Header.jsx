@@ -1,3 +1,4 @@
+```jsx
 import { useLocation, useNavigate } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
@@ -60,12 +61,12 @@ const Header = () => {
         openNavigation ? "bg-n-8" : "bg-n-8/80 backdrop-blur-md"
       }`}
     >
-      <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
+      <div className="flex items-center px-4 lg:px-7.5 xl:px-10 max-lg:py-4">
         <button 
-          className="block w-[12rem] xl:mr-8" 
+          className="block w-[10rem] md:w-[12rem] xl:mr-8" 
           onClick={() => navigate('/')}
         >
-          <img src={codesec} width={190} height={40} alt="CodeSec Community" />
+          <img src={codesec} width={190} height={40} alt="CodeSec Community" className="w-full h-auto" />
         </button>
 
         <nav
@@ -78,14 +79,14 @@ const Header = () => {
               <button
                 key={item.id}
                 onClick={() => handleNavigation(item)}
-                className={`block relative font-code text-2xl uppercase text-n-1 transition-all duration-300 hover:text-gradient hover:bg-gradient-to-r hover:from-purple-400 hover:to-cyan-400 hover:bg-clip-text hover:text-transparent ${
+                className={`block relative font-code text-xl md:text-2xl lg:text-xs uppercase text-n-1 transition-all duration-300 hover:text-gradient hover:bg-gradient-to-r hover:from-purple-400 hover:to-cyan-400 hover:bg-clip-text hover:text-transparent ${
                   item.onlyMobile ? "lg:hidden" : ""
-                } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
+                } px-4 py-4 md:py-6 lg:py-6 lg:-mr-0.25 lg:font-semibold ${
                   (item.url === location.pathname) || 
                   (item.url.startsWith('#') && location.pathname === '/' && location.hash === item.url)
                     ? "z-2 lg:text-gradient lg:bg-gradient-to-r lg:from-purple-400 lg:to-cyan-400 lg:bg-clip-text lg:text-transparent"
                     : "lg:text-n-1/70"
-                } lg:leading-5 lg:hover:text-n-1 xl:px-12`}
+                } lg:leading-5 lg:hover:text-n-1 xl:px-8`}
               >
                 {item.title}
               </button>
@@ -97,12 +98,16 @@ const Header = () => {
 
         <button
           onClick={() => window.open('https://github.com/codesec-community', '_blank', 'noopener noreferrer')}
-          className="button hidden mr-8 text-n-1/50 transition-all duration-300 hover:text-gradient hover:bg-gradient-to-r hover:from-purple-400 hover:to-cyan-400 hover:bg-clip-text hover:text-transparent lg:block"
+          className="button hidden mr-4 lg:mr-8 text-n-1/50 transition-all duration-300 hover:text-gradient hover:bg-gradient-to-r hover:from-purple-400 hover:to-cyan-400 hover:bg-clip-text hover:text-transparent lg:block text-xs font-code font-bold uppercase tracking-wider"
         >
           GitHub
         </button>
         
-        <Button className="hidden lg:flex bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700" onClick={() => navigate('/join')}>
+        <Button 
+          className="hidden lg:flex bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700" 
+          onClick={() => navigate('/join')}
+          size="md"
+        >
           Join Community
         </Button>
 
@@ -110,6 +115,7 @@ const Header = () => {
           className="ml-auto lg:hidden"
           px="px-3"
           onClick={toggleNavigation}
+          size="sm"
         >
           <MenuSvg openNavigation={openNavigation} />
         </Button>
@@ -119,3 +125,4 @@ const Header = () => {
 };
 
 export default Header;
+```

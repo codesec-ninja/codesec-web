@@ -1,3 +1,4 @@
+```css
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
@@ -240,3 +241,51 @@ html {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+/* Responsive button improvements */
+@media (max-width: 640px) {
+  .button {
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+    min-height: 2.5rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .button {
+    font-size: 0.875rem;
+    padding: 0.625rem 1.25rem;
+    min-height: 2.75rem;
+  }
+}
+
+/* Mobile navigation improvements */
+@media (max-width: 1024px) {
+  .mobile-nav-item {
+    padding: 1rem 1.5rem;
+    font-size: 1.125rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .mobile-nav-item:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Responsive grid improvements */
+@media (max-width: 640px) {
+  .responsive-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .responsive-grid-1 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .responsive-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+```

@@ -1,4 +1,6 @@
+```mdx
 import MDXLayout from '../components/MDXLayout'
+import Button from '../components/Button'
 import { motion } from 'framer-motion'
 import { BookOpen, Video, Code, Download, ExternalLink, Users, Star, Clock } from 'lucide-react'
 
@@ -8,33 +10,33 @@ import { BookOpen, Video, Code, Download, ExternalLink, Users, Star, Clock } fro
 >
 
 <motion.div 
-  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12"
+  className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-12"
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ delay: 0.3 }}
 >
-  <div className="p-6 bg-gradient-to-br from-purple-900/20 to-transparent backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
-    <BookOpen className="w-10 h-10 text-purple-400 mx-auto mb-3" />
-    <div className="text-2xl font-bold text-color-1 mb-1">200+</div>
-    <div className="text-sm text-n-3">Tutorials</div>
+  <div className="p-4 md:p-6 bg-gradient-to-br from-purple-900/20 to-transparent backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
+    <BookOpen className="w-8 h-8 md:w-10 md:h-10 text-purple-400 mx-auto mb-2 md:mb-3" />
+    <div className="text-xl md:text-2xl font-bold text-color-1 mb-1">200+</div>
+    <div className="text-xs md:text-sm text-n-3">Tutorials</div>
   </div>
   
-  <div className="p-6 bg-gradient-to-br from-cyan-900/20 to-transparent backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
-    <Video className="w-10 h-10 text-cyan-400 mx-auto mb-3" />
-    <div className="text-2xl font-bold text-color-2 mb-1">150+</div>
-    <div className="text-sm text-n-3">Video Courses</div>
+  <div className="p-4 md:p-6 bg-gradient-to-br from-cyan-900/20 to-transparent backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
+    <Video className="w-8 h-8 md:w-10 md:h-10 text-cyan-400 mx-auto mb-2 md:mb-3" />
+    <div className="text-xl md:text-2xl font-bold text-color-2 mb-1">150+</div>
+    <div className="text-xs md:text-sm text-n-3">Video Courses</div>
   </div>
   
-  <div className="p-6 bg-gradient-to-br from-green-900/20 to-transparent backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
-    <Code className="w-10 h-10 text-green-400 mx-auto mb-3" />
-    <div className="text-2xl font-bold text-color-3 mb-1">500+</div>
-    <div className="text-sm text-n-3">Code Examples</div>
+  <div className="p-4 md:p-6 bg-gradient-to-br from-green-900/20 to-transparent backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
+    <Code className="w-8 h-8 md:w-10 md:h-10 text-green-400 mx-auto mb-2 md:mb-3" />
+    <div className="text-xl md:text-2xl font-bold text-color-3 mb-1">500+</div>
+    <div className="text-xs md:text-sm text-n-3">Code Examples</div>
   </div>
   
-  <div className="p-6 bg-gradient-to-br from-yellow-900/20 to-transparent backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
-    <Download className="w-10 h-10 text-yellow-400 mx-auto mb-3" />
-    <div className="text-2xl font-bold text-color-4 mb-1">100+</div>
-    <div className="text-sm text-n-3">Tools & Scripts</div>
+  <div className="p-4 md:p-6 bg-gradient-to-br from-yellow-900/20 to-transparent backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
+    <Download className="w-8 h-8 md:w-10 md:h-10 text-yellow-400 mx-auto mb-2 md:mb-3" />
+    <div className="text-xl md:text-2xl font-bold text-color-4 mb-1">100+</div>
+    <div className="text-xs md:text-sm text-n-3">Tools & Scripts</div>
   </div>
 </motion.div>
 
@@ -45,14 +47,14 @@ Choose your learning journey based on your experience level and interests:
 ### 🎯 Cybersecurity Fundamentals
 **Perfect for beginners entering the cybersecurity field**
 
-<div className="p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl mb-6">
-  <div className="flex items-center justify-between mb-4">
-    <div className="flex items-center gap-3">
-      <div className="px-3 py-1 bg-green-500/20 text-green-400 border border-green-500/30 rounded-full text-xs font-semibold">
+<div className="p-4 md:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl mb-6">
+  <div className="flex flex-col md:flex-row md:items-center justify-between mb-4 gap-3">
+    <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+      <div className="px-3 py-1 bg-green-500/20 text-green-400 border border-green-500/30 rounded-full text-xs font-semibold w-fit">
         Beginner
       </div>
-      <div className="text-sm text-n-4">
-        <Clock className="w-4 h-4 inline mr-1" />
+      <div className="text-sm text-n-4 flex items-center">
+        <Clock className="w-4 h-4 mr-1" />
         4 weeks • 12 modules
       </div>
     </div>
@@ -63,7 +65,7 @@ Choose your learning journey based on your experience level and interests:
   </div>
   
   <h4 className="h6 mb-3 text-color-1">Core Topics Covered:</h4>
-  <ul className="space-y-2 text-n-3 mb-4">
+  <ul className="space-y-2 text-n-3 mb-4 text-sm md:text-base">
     <li>• Introduction to Information Security</li>
     <li>• Network Security Fundamentals</li>
     <li>• Cryptography Basics</li>
@@ -72,27 +74,33 @@ Choose your learning journey based on your experience level and interests:
     <li>• Incident Response Fundamentals</li>
   </ul>
   
-  <div className="flex gap-3">
-    <button className="px-4 py-2 bg-gradient-to-r from-purple-600 to-cyan-600 text-white text-sm font-semibold rounded-lg hover:from-purple-700 hover:to-cyan-700 transition-all duration-300">
+  <div className="flex flex-col sm:flex-row gap-3">
+    <Button 
+      className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700"
+      size="md"
+    >
       Start Learning
-    </button>
-    <button className="px-4 py-2 bg-n-7 hover:bg-n-6 text-n-1 text-sm font-semibold rounded-lg transition-colors duration-300">
+    </Button>
+    <Button 
+      className="bg-n-7 hover:bg-n-6 text-n-1"
+      size="md"
+    >
       Preview
-    </button>
+    </Button>
   </div>
 </div>
 
 ### 🤖 AI Security Research
 **Advanced topics for experienced professionals**
 
-<div className="p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl mb-6">
-  <div className="flex items-center justify-between mb-4">
-    <div className="flex items-center gap-3">
-      <div className="px-3 py-1 bg-red-500/20 text-red-400 border border-red-500/30 rounded-full text-xs font-semibold">
+<div className="p-4 md:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl mb-6">
+  <div className="flex flex-col md:flex-row md:items-center justify-between mb-4 gap-3">
+    <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+      <div className="px-3 py-1 bg-red-500/20 text-red-400 border border-red-500/30 rounded-full text-xs font-semibold w-fit">
         Advanced
       </div>
-      <div className="text-sm text-n-4">
-        <Clock className="w-4 h-4 inline mr-1" />
+      <div className="text-sm text-n-4 flex items-center">
+        <Clock className="w-4 h-4 mr-1" />
         8 weeks • 24 modules
       </div>
     </div>
@@ -103,7 +111,7 @@ Choose your learning journey based on your experience level and interests:
   </div>
   
   <h4 className="h6 mb-3 text-color-2">Advanced Topics:</h4>
-  <ul className="space-y-2 text-n-3 mb-4">
+  <ul className="space-y-2 text-n-3 mb-4 text-sm md:text-base">
     <li>• Machine Learning for Threat Detection</li>
     <li>• Adversarial Machine Learning</li>
     <li>• Deep Learning Security Applications</li>
@@ -112,27 +120,33 @@ Choose your learning journey based on your experience level and interests:
     <li>• Research Methodologies</li>
   </ul>
   
-  <div className="flex gap-3">
-    <button className="px-4 py-2 bg-gradient-to-r from-purple-600 to-cyan-600 text-white text-sm font-semibold rounded-lg hover:from-purple-700 hover:to-cyan-700 transition-all duration-300">
+  <div className="flex flex-col sm:flex-row gap-3">
+    <Button 
+      className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700"
+      size="md"
+    >
       Start Learning
-    </button>
-    <button className="px-4 py-2 bg-n-7 hover:bg-n-6 text-n-1 text-sm font-semibold rounded-lg transition-colors duration-300">
+    </Button>
+    <Button 
+      className="bg-n-7 hover:bg-n-6 text-n-1"
+      size="md"
+    >
       Prerequisites
-    </button>
+    </Button>
   </div>
 </div>
 
 ### 🔧 Penetration Testing Mastery
 **Hands-on ethical hacking and penetration testing**
 
-<div className="p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl mb-6">
-  <div className="flex items-center justify-between mb-4">
-    <div className="flex items-center gap-3">
-      <div className="px-3 py-1 bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 rounded-full text-xs font-semibold">
+<div className="p-4 md:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl mb-6">
+  <div className="flex flex-col md:flex-row md:items-center justify-between mb-4 gap-3">
+    <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+      <div className="px-3 py-1 bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 rounded-full text-xs font-semibold w-fit">
         Intermediate
       </div>
-      <div className="text-sm text-n-4">
-        <Clock className="w-4 h-4 inline mr-1" />
+      <div className="text-sm text-n-4 flex items-center">
+        <Clock className="w-4 h-4 mr-1" />
         6 weeks • 18 modules
       </div>
     </div>
@@ -143,7 +157,7 @@ Choose your learning journey based on your experience level and interests:
   </div>
   
   <h4 className="h6 mb-3 text-color-3">Practical Skills:</h4>
-  <ul className="space-y-2 text-n-3 mb-4">
+  <ul className="space-y-2 text-n-3 mb-4 text-sm md:text-base">
     <li>• Reconnaissance and Information Gathering</li>
     <li>• Vulnerability Assessment Techniques</li>
     <li>• Exploitation Frameworks and Tools</li>
@@ -152,63 +166,69 @@ Choose your learning journey based on your experience level and interests:
     <li>• Report Writing and Communication</li>
   </ul>
   
-  <div className="flex gap-3">
-    <button className="px-4 py-2 bg-gradient-to-r from-purple-600 to-cyan-600 text-white text-sm font-semibold rounded-lg hover:from-purple-700 hover:to-cyan-700 transition-all duration-300">
+  <div className="flex flex-col sm:flex-row gap-3">
+    <Button 
+      className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700"
+      size="md"
+    >
       Start Learning
-    </button>
-    <button className="px-4 py-2 bg-n-7 hover:bg-n-6 text-n-1 text-sm font-semibold rounded-lg transition-colors duration-300">
+    </Button>
+    <Button 
+      className="bg-n-7 hover:bg-n-6 text-n-1"
+      size="md"
+    >
       Lab Access
-    </button>
+    </Button>
   </div>
 </div>
 
 ## Resource Categories
 
-<div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-  <div className="p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl">
-    <BookOpen className="w-8 h-8 text-purple-400 mb-3" />
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 my-8">
+  <div className="p-4 md:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl">
+    <BookOpen className="w-6 h-6 md:w-8 md:h-8 text-purple-400 mb-3" />
     <h4 className="h6 mb-2 text-color-1">Documentation & Guides</h4>
-    <p className="body-2 text-n-3 mb-4">Comprehensive guides, best practices, and step-by-step tutorials</p>
+    <p className="body-2 text-n-3 mb-4 text-sm md:text-base">Comprehensive guides, best practices, and step-by-step tutorials</p>
     <div className="flex items-center justify-between text-sm">
       <span className="text-n-4">200+ resources</span>
-      <a href="#" className="text-color-1 hover:text-n-1 transition-colors">
-        Browse All <ExternalLink className="w-3 h-3 inline ml-1" />
+      <a href="#" className="text-color-1 hover:text-n-1 transition-colors flex items-center">
+        Browse All <ExternalLink className="w-3 h-3 ml-1" />
       </a>
     </div>
   </div>
   
-  <div className="p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl">
-    <Video className="w-8 h-8 text-cyan-400 mb-3" />
+  <div className="p-4 md:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl">
+    <Video className="w-6 h-6 md:w-8 md:h-8 text-cyan-400 mb-3" />
     <h4 className="h6 mb-2 text-color-2">Video Tutorials</h4>
-    <p className="body-2 text-n-3 mb-4">Interactive video courses and live workshop recordings</p>
+    <p className="body-2 text-n-3 mb-4 text-sm md:text-base">Interactive video courses and live workshop recordings</p>
     <div className="flex items-center justify-between text-sm">
       <span className="text-n-4">150+ videos</span>
-      <a href="#" className="text-color-2 hover:text-n-1 transition-colors">
-        Watch Now <ExternalLink className="w-3 h-3 inline ml-1" />
+      <a href="#" className="text-color-2 hover:text-n-1 transition-colors flex items-center">
+        Watch Now <ExternalLink className="w-3 h-3 ml-1" />
       </a>
     </div>
   </div>
   
-  <div className="p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl">
-    <Code className="w-8 h-8 text-green-400 mb-3" />
+  <div className="p-4 md:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl">
+    <Code className="w-6 h-6 md:w-8 md:h-8 text-green-400 mb-3" />
     <h4 className="h6 mb-2 text-color-3">Code Examples</h4>
-    <p className="body-2 text-n-3 mb-4">Practical code samples, scripts, and implementation examples</p>
+    <p className="body-2 text-n-3 mb-4 text-sm md:text-base">Practical code samples, scripts, and implementation examples</p>
     <div className="flex items-center justify-between text-sm">
       <span className="text-n-4">500+ examples</span>
-      <a href="#" className="text-color-3 hover:text-n-1 transition-colors">
-        View Code <ExternalLink className="w-3 h-3 inline ml-1" />
+      <a href="#" className="text-color-3 hover:text-n-1 transition-colors flex items-center">
+        View Code <ExternalLink className="w-3 h-3 ml-1" />
       </a>
     </div>
   </div>
   
-  <div className="p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl">
-    <Download className="w-8 h-8 text-yellow-400 mb-3" />
+  <div className="p-4 md:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl">
+    <Download className="w-6 h-6 md:w-8 md:h-8 text-yellow-400 mb-3" />
     <h4 className="h6 mb-2 text-color-4">Tools & Scripts</h4>
-    <p className="body-2 text-n-3 mb-4">Ready-to-use security tools, automation scripts, and utilities</p>
+    <p className="body-2 text-n-3 mb-4 text-sm md:text-base">Ready-to-use security tools, automation scripts, and utilities</p>
     <div className="flex items-center justify-between text-sm">
       <span className="text-n-4">100+ tools</span>
-      <a href="#" className="text-color-4 hover:text-n-1 transition-colors">
-        Download <ExternalLink className="w-3 h-3 inline ml-1" />
+      <a href="#" className="text-color-4 hover:text-n-1 transition-colors flex items-center">
+        Download <ExternalLink className="w-3 h-3 ml-1" />
       </a>
     </div>
   </div>
@@ -260,19 +280,21 @@ Our resources are created and maintained by the community:
 3. **Translate Content** - Make resources accessible to global community
 4. **Provide Feedback** - Help improve existing resources
 
-<div className="text-center mt-12">
+<div className="text-center mt-8 md:mt-12">
   <motion.div
     className="inline-block"
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
   >
-    <a 
+    <Button 
       href="/join" 
-      className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-cyan-600 text-white font-semibold rounded-xl hover:from-purple-700 hover:to-cyan-700 transition-all duration-300 shadow-lg"
+      className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700"
+      size="lg"
     >
       Access All Resources
-    </a>
+    </Button>
   </motion.div>
 </div>
 
 </MDXLayout>
+```
