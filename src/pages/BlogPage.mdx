@@ -1,4 +1,3 @@
-```mdx
 import MDXLayout from '../components/MDXLayout'
 import Button from '../components/Button'
 import { motion } from 'framer-motion'
@@ -10,33 +9,33 @@ import { Calendar, User, Tag, TrendingUp, MessageCircle, Heart, Share } from 'lu
 >
 
 <motion.div 
-  className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-12"
+  className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6 mb-8 md:mb-12"
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ delay: 0.3 }}
 >
-  <div className="p-4 md:p-6 bg-gradient-to-br from-purple-900/20 to-transparent backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
-    <TrendingUp className="w-8 h-8 md:w-10 md:h-10 text-purple-400 mx-auto mb-2 md:mb-3" />
-    <div className="text-xl md:text-2xl font-bold text-color-1 mb-1">500+</div>
-    <div className="text-xs md:text-sm text-n-3">Articles Published</div>
+  <div className="p-3 sm:p-4 md:p-6 bg-gradient-to-br from-purple-900/20 to-transparent backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
+    <TrendingUp className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-purple-400 mx-auto mb-2 md:mb-3" />
+    <div className="text-lg sm:text-xl md:text-2xl font-bold text-color-1 mb-1">500+</div>
+    <div className="text-xs sm:text-sm text-n-3">Articles Published</div>
   </div>
   
-  <div className="p-4 md:p-6 bg-gradient-to-br from-cyan-900/20 to-transparent backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
-    <User className="w-8 h-8 md:w-10 md:h-10 text-cyan-400 mx-auto mb-2 md:mb-3" />
-    <div className="text-xl md:text-2xl font-bold text-color-2 mb-1">100+</div>
-    <div className="text-xs md:text-sm text-n-3">Expert Authors</div>
+  <div className="p-3 sm:p-4 md:p-6 bg-gradient-to-br from-cyan-900/20 to-transparent backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
+    <User className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-cyan-400 mx-auto mb-2 md:mb-3" />
+    <div className="text-lg sm:text-xl md:text-2xl font-bold text-color-2 mb-1">100+</div>
+    <div className="text-xs sm:text-sm text-n-3">Expert Authors</div>
   </div>
   
-  <div className="p-4 md:p-6 bg-gradient-to-br from-green-900/20 to-transparent backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
-    <MessageCircle className="w-8 h-8 md:w-10 md:h-10 text-green-400 mx-auto mb-2 md:mb-3" />
-    <div className="text-xl md:text-2xl font-bold text-color-3 mb-1">10K+</div>
-    <div className="text-xs md:text-sm text-n-3">Comments</div>
+  <div className="p-3 sm:p-4 md:p-6 bg-gradient-to-br from-green-900/20 to-transparent backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
+    <MessageCircle className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-green-400 mx-auto mb-2 md:mb-3" />
+    <div className="text-lg sm:text-xl md:text-2xl font-bold text-color-3 mb-1">10K+</div>
+    <div className="text-xs sm:text-sm text-n-3">Comments</div>
   </div>
   
-  <div className="p-4 md:p-6 bg-gradient-to-br from-yellow-900/20 to-transparent backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
-    <Heart className="w-8 h-8 md:w-10 md:h-10 text-yellow-400 mx-auto mb-2 md:mb-3" />
-    <div className="text-xl md:text-2xl font-bold text-color-4 mb-1">50K+</div>
-    <div className="text-xs md:text-sm text-n-3">Likes</div>
+  <div className="p-3 sm:p-4 md:p-6 bg-gradient-to-br from-yellow-900/20 to-transparent backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
+    <Heart className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-yellow-400 mx-auto mb-2 md:mb-3" />
+    <div className="text-lg sm:text-xl md:text-2xl font-bold text-color-4 mb-1">50K+</div>
+    <div className="text-xs sm:text-sm text-n-3">Likes</div>
   </div>
 </motion.div>
 
@@ -45,16 +44,16 @@ import { Calendar, User, Tag, TrendingUp, MessageCircle, Heart, Share } from 'lu
 ### 🔥 Latest Posts
 
 <div className="space-y-6 md:space-y-8 mb-12">
-  <article className="p-4 md:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl hover:border-n-6 transition-all duration-300">
+  <article className="p-4 sm:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl hover:border-n-6 transition-all duration-300">
     <div className="flex items-center gap-3 mb-4">
-      <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-purple-600 to-cyan-600 rounded-full flex items-center justify-center text-white font-semibold text-sm md:text-base">
+      <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-purple-600 to-cyan-600 rounded-full flex items-center justify-center text-white font-semibold text-sm">
         SC
       </div>
-      <div>
-        <div className="font-medium text-white text-sm md:text-base">Dr. Sarah Chen</div>
+      <div className="flex-1 min-w-0">
+        <div className="font-medium text-white text-sm sm:text-base truncate">Dr. Sarah Chen</div>
         <div className="flex flex-col sm:flex-row sm:items-center text-white/40 text-xs space-y-1 sm:space-y-0 sm:space-x-2">
           <div className="flex items-center">
-            <Calendar className="w-3 h-3 mr-1" />
+            <Calendar className="w-3 h-3 mr-1 flex-shrink-0" />
             <span>December 15, 2024</span>
           </div>
           <span className="hidden sm:inline">•</span>
@@ -63,23 +62,23 @@ import { Calendar, User, Tag, TrendingUp, MessageCircle, Heart, Share } from 'lu
       </div>
     </div>
     
-    <h3 className="text-lg md:text-xl font-semibold text-white mb-3 hover:text-cyan-400 transition-colors cursor-pointer">
+    <h3 className="text-lg sm:text-xl font-semibold text-white mb-3 hover:text-cyan-400 transition-colors cursor-pointer leading-tight">
       The Future of AI-Powered Threat Detection: Beyond Traditional Signatures
     </h3>
     
-    <p className="text-white/60 text-sm md:text-base mb-4 leading-relaxed">
-      As cyber threats evolve at an unprecedented pace, traditional signature-based detection methods are becoming increasingly inadequate. This article explores how artificial intelligence and machine learning are revolutionizing threat detection, offering adaptive and predictive capabilities that can identify zero-day attacks and sophisticated APTs...
+    <p className="text-white/60 text-sm sm:text-base mb-4 leading-relaxed">
+      As cyber threats evolve at an unprecedented pace, traditional signature-based detection methods are becoming increasingly inadequate. This article explores how artificial intelligence and machine learning are revolutionizing threat detection...
     </p>
     
     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
       <div className="flex flex-wrap gap-2">
-        <span className="px-2 md:px-3 py-1 bg-purple-500/20 text-purple-400 border border-purple-500/30 rounded-full text-xs font-medium">
+        <span className="px-2 sm:px-3 py-1 bg-purple-500/20 text-purple-400 border border-purple-500/30 rounded-full text-xs font-medium">
           AI Security
         </span>
-        <span className="px-2 md:px-3 py-1 bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 rounded-full text-xs font-medium">
+        <span className="px-2 sm:px-3 py-1 bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 rounded-full text-xs font-medium">
           Threat Detection
         </span>
-        <span className="px-2 md:px-3 py-1 bg-green-500/20 text-green-400 border border-green-500/30 rounded-full text-xs font-medium">
+        <span className="px-2 sm:px-3 py-1 bg-green-500/20 text-green-400 border border-green-500/30 rounded-full text-xs font-medium">
           Machine Learning
         </span>
       </div>
@@ -101,16 +100,16 @@ import { Calendar, User, Tag, TrendingUp, MessageCircle, Heart, Share } from 'lu
     </div>
   </article>
 
-  <article className="p-4 md:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl hover:border-n-6 transition-all duration-300">
+  <article className="p-4 sm:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl hover:border-n-6 transition-all duration-300">
     <div className="flex items-center gap-3 mb-4">
-      <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-green-600 to-blue-600 rounded-full flex items-center justify-center text-white font-semibold text-sm md:text-base">
+      <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-green-600 to-blue-600 rounded-full flex items-center justify-center text-white font-semibold text-sm">
         MR
       </div>
-      <div>
-        <div className="font-medium text-white text-sm md:text-base">Prof. Michael Rodriguez</div>
+      <div className="flex-1 min-w-0">
+        <div className="font-medium text-white text-sm sm:text-base truncate">Prof. Michael Rodriguez</div>
         <div className="flex flex-col sm:flex-row sm:items-center text-white/40 text-xs space-y-1 sm:space-y-0 sm:space-x-2">
           <div className="flex items-center">
-            <Calendar className="w-3 h-3 mr-1" />
+            <Calendar className="w-3 h-3 mr-1 flex-shrink-0" />
             <span>December 12, 2024</span>
           </div>
           <span className="hidden sm:inline">•</span>
@@ -119,23 +118,23 @@ import { Calendar, User, Tag, TrendingUp, MessageCircle, Heart, Share } from 'lu
       </div>
     </div>
     
-    <h3 className="text-lg md:text-xl font-semibold text-white mb-3 hover:text-cyan-400 transition-colors cursor-pointer">
+    <h3 className="text-lg sm:text-xl font-semibold text-white mb-3 hover:text-cyan-400 transition-colors cursor-pointer leading-tight">
       Quantum-Safe Cryptography: Preparing for the Post-Quantum Era
     </h3>
     
-    <p className="text-white/60 text-sm md:text-base mb-4 leading-relaxed">
-      With quantum computers becoming increasingly powerful, the cryptographic foundations that secure our digital world are under threat. This comprehensive guide explores quantum-safe cryptographic algorithms, migration strategies, and the timeline for implementing post-quantum cryptography in enterprise environments...
+    <p className="text-white/60 text-sm sm:text-base mb-4 leading-relaxed">
+      With quantum computers becoming increasingly powerful, the cryptographic foundations that secure our digital world are under threat. This comprehensive guide explores quantum-safe cryptographic algorithms...
     </p>
     
     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
       <div className="flex flex-wrap gap-2">
-        <span className="px-2 md:px-3 py-1 bg-blue-500/20 text-blue-400 border border-blue-500/30 rounded-full text-xs font-medium">
+        <span className="px-2 sm:px-3 py-1 bg-blue-500/20 text-blue-400 border border-blue-500/30 rounded-full text-xs font-medium">
           Cryptography
         </span>
-        <span className="px-2 md:px-3 py-1 bg-purple-500/20 text-purple-400 border border-purple-500/30 rounded-full text-xs font-medium">
+        <span className="px-2 sm:px-3 py-1 bg-purple-500/20 text-purple-400 border border-purple-500/30 rounded-full text-xs font-medium">
           Quantum Computing
         </span>
-        <span className="px-2 md:px-3 py-1 bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 rounded-full text-xs font-medium">
+        <span className="px-2 sm:px-3 py-1 bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 rounded-full text-xs font-medium">
           Enterprise Security
         </span>
       </div>
@@ -157,16 +156,16 @@ import { Calendar, User, Tag, TrendingUp, MessageCircle, Heart, Share } from 'lu
     </div>
   </article>
 
-  <article className="p-4 md:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl hover:border-n-6 transition-all duration-300">
+  <article className="p-4 sm:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl hover:border-n-6 transition-all duration-300">
     <div className="flex items-center gap-3 mb-4">
-      <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-red-600 to-pink-600 rounded-full flex items-center justify-center text-white font-semibold text-sm md:text-base">
+      <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-red-600 to-pink-600 rounded-full flex items-center justify-center text-white font-semibold text-sm">
         AP
       </div>
-      <div>
-        <div className="font-medium text-white text-sm md:text-base">Dr. Aisha Patel</div>
+      <div className="flex-1 min-w-0">
+        <div className="font-medium text-white text-sm sm:text-base truncate">Dr. Aisha Patel</div>
         <div className="flex flex-col sm:flex-row sm:items-center text-white/40 text-xs space-y-1 sm:space-y-0 sm:space-x-2">
           <div className="flex items-center">
-            <Calendar className="w-3 h-3 mr-1" />
+            <Calendar className="w-3 h-3 mr-1 flex-shrink-0" />
             <span>December 10, 2024</span>
           </div>
           <span className="hidden sm:inline">•</span>
@@ -175,23 +174,23 @@ import { Calendar, User, Tag, TrendingUp, MessageCircle, Heart, Share } from 'lu
       </div>
     </div>
     
-    <h3 className="text-lg md:text-xl font-semibold text-white mb-3 hover:text-cyan-400 transition-colors cursor-pointer">
+    <h3 className="text-lg sm:text-xl font-semibold text-white mb-3 hover:text-cyan-400 transition-colors cursor-pointer leading-tight">
       Zero Trust Architecture: Implementation Lessons from Fortune 500 Companies
     </h3>
     
-    <p className="text-white/60 text-sm md:text-base mb-4 leading-relaxed">
-      Zero Trust has evolved from a buzzword to a critical security framework. Based on real-world implementations across major enterprises, this article shares practical insights, common pitfalls, and best practices for successfully deploying Zero Trust architecture in complex organizational environments...
+    <p className="text-white/60 text-sm sm:text-base mb-4 leading-relaxed">
+      Zero Trust has evolved from a buzzword to a critical security framework. Based on real-world implementations across major enterprises, this article shares practical insights...
     </p>
     
     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
       <div className="flex flex-wrap gap-2">
-        <span className="px-2 md:px-3 py-1 bg-red-500/20 text-red-400 border border-red-500/30 rounded-full text-xs font-medium">
+        <span className="px-2 sm:px-3 py-1 bg-red-500/20 text-red-400 border border-red-500/30 rounded-full text-xs font-medium">
           Zero Trust
         </span>
-        <span className="px-2 md:px-3 py-1 bg-orange-500/20 text-orange-400 border border-orange-500/30 rounded-full text-xs font-medium">
+        <span className="px-2 sm:px-3 py-1 bg-orange-500/20 text-orange-400 border border-orange-500/30 rounded-full text-xs font-medium">
           Enterprise
         </span>
-        <span className="px-2 md:px-3 py-1 bg-green-500/20 text-green-400 border border-green-500/30 rounded-full text-xs font-medium">
+        <span className="px-2 sm:px-3 py-1 bg-green-500/20 text-green-400 border border-green-500/30 rounded-full text-xs font-medium">
           Case Study
         </span>
       </div>
@@ -216,89 +215,89 @@ import { Calendar, User, Tag, TrendingUp, MessageCircle, Heart, Share } from 'lu
 
 ## Popular Categories
 
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 my-8">
-  <div className="p-4 md:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl hover:border-n-6 transition-all duration-300 cursor-pointer">
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 my-6 md:my-8">
+  <div className="p-4 sm:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl hover:border-n-6 transition-all duration-300 cursor-pointer">
     <div className="flex items-center justify-between mb-4">
-      <h4 className="h6 text-color-1">AI & Machine Learning</h4>
+      <h4 className="text-lg sm:text-xl font-semibold text-color-1">AI & Machine Learning</h4>
       <span className="text-sm text-n-4">85 articles</span>
     </div>
-    <p className="body-2 text-n-3 mb-4 text-sm md:text-base">Latest developments in AI-powered security solutions and research</p>
+    <p className="text-sm sm:text-base text-n-3 mb-4">Latest developments in AI-powered security solutions and research</p>
     <div className="text-sm text-color-1">Read more →</div>
   </div>
   
-  <div className="p-4 md:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl hover:border-n-6 transition-all duration-300 cursor-pointer">
+  <div className="p-4 sm:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl hover:border-n-6 transition-all duration-300 cursor-pointer">
     <div className="flex items-center justify-between mb-4">
-      <h4 className="h6 text-color-2">Penetration Testing</h4>
+      <h4 className="text-lg sm:text-xl font-semibold text-color-2">Penetration Testing</h4>
       <span className="text-sm text-n-4">72 articles</span>
     </div>
-    <p className="body-2 text-n-3 mb-4 text-sm md:text-base">Techniques, tools, and methodologies for ethical hacking</p>
+    <p className="text-sm sm:text-base text-n-3 mb-4">Techniques, tools, and methodologies for ethical hacking</p>
     <div className="text-sm text-color-2">Read more →</div>
   </div>
   
-  <div className="p-4 md:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl hover:border-n-6 transition-all duration-300 cursor-pointer">
+  <div className="p-4 sm:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl hover:border-n-6 transition-all duration-300 cursor-pointer">
     <div className="flex items-center justify-between mb-4">
-      <h4 className="h6 text-color-3">Threat Intelligence</h4>
+      <h4 className="text-lg sm:text-xl font-semibold text-color-3">Threat Intelligence</h4>
       <span className="text-sm text-n-4">64 articles</span>
     </div>
-    <p className="body-2 text-n-3 mb-4 text-sm md:text-base">Analysis of emerging threats and attack patterns</p>
+    <p className="text-sm sm:text-base text-n-3 mb-4">Analysis of emerging threats and attack patterns</p>
     <div className="text-sm text-color-3">Read more →</div>
   </div>
   
-  <div className="p-4 md:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl hover:border-n-6 transition-all duration-300 cursor-pointer">
+  <div className="p-4 sm:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl hover:border-n-6 transition-all duration-300 cursor-pointer">
     <div className="flex items-center justify-between mb-4">
-      <h4 className="h6 text-color-4">Cloud Security</h4>
+      <h4 className="text-lg sm:text-xl font-semibold text-color-4">Cloud Security</h4>
       <span className="text-sm text-n-4">58 articles</span>
     </div>
-    <p className="body-2 text-n-3 mb-4 text-sm md:text-base">Securing cloud infrastructure and applications</p>
+    <p className="text-sm sm:text-base text-n-3 mb-4">Securing cloud infrastructure and applications</p>
     <div className="text-sm text-color-4">Read more →</div>
   </div>
   
-  <div className="p-4 md:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl hover:border-n-6 transition-all duration-300 cursor-pointer">
+  <div className="p-4 sm:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl hover:border-n-6 transition-all duration-300 cursor-pointer">
     <div className="flex items-center justify-between mb-4">
-      <h4 className="h6 text-color-5">Incident Response</h4>
+      <h4 className="text-lg sm:text-xl font-semibold text-color-5">Incident Response</h4>
       <span className="text-sm text-n-4">45 articles</span>
     </div>
-    <p className="body-2 text-n-3 mb-4 text-sm md:text-base">Best practices for handling security incidents</p>
+    <p className="text-sm sm:text-base text-n-3 mb-4">Best practices for handling security incidents</p>
     <div className="text-sm text-color-5">Read more →</div>
   </div>
   
-  <div className="p-4 md:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl hover:border-n-6 transition-all duration-300 cursor-pointer">
+  <div className="p-4 sm:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl hover:border-n-6 transition-all duration-300 cursor-pointer">
     <div className="flex items-center justify-between mb-4">
-      <h4 className="h6 text-color-6">Tutorials</h4>
+      <h4 className="text-lg sm:text-xl font-semibold text-color-6">Tutorials</h4>
       <span className="text-sm text-n-4">120 articles</span>
     </div>
-    <p className="body-2 text-n-3 mb-4 text-sm md:text-base">Step-by-step guides and hands-on tutorials</p>
+    <p className="text-sm sm:text-base text-n-3 mb-4">Step-by-step guides and hands-on tutorials</p>
     <div className="text-sm text-color-6">Read more →</div>
   </div>
 </div>
 
 ## Featured Authors
 
-<div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 my-8">
-  <div className="p-4 md:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
-    <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-purple-600 to-cyan-600 rounded-full flex items-center justify-center text-white font-bold text-lg md:text-xl mx-auto mb-4">
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 my-6 md:my-8">
+  <div className="p-4 sm:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
+    <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-purple-600 to-cyan-600 rounded-full flex items-center justify-center text-white font-bold text-lg sm:text-xl mx-auto mb-4">
       SC
     </div>
-    <h4 className="h6 mb-2 text-color-1">Dr. Sarah Chen</h4>
-    <p className="body-2 text-n-3 mb-3 text-sm md:text-base">AI Security Researcher</p>
+    <h4 className="text-lg sm:text-xl font-semibold mb-2 text-color-1">Dr. Sarah Chen</h4>
+    <p className="text-sm sm:text-base text-n-3 mb-3">AI Security Researcher</p>
     <div className="text-sm text-n-4">25 articles • 10K+ views</div>
   </div>
   
-  <div className="p-4 md:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
-    <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-green-600 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg md:text-xl mx-auto mb-4">
+  <div className="p-4 sm:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
+    <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-green-600 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg sm:text-xl mx-auto mb-4">
       MR
     </div>
-    <h4 className="h6 mb-2 text-color-2">Prof. Michael Rodriguez</h4>
-    <p className="body-2 text-n-3 mb-3 text-sm md:text-base">Cryptography Expert</p>
+    <h4 className="text-lg sm:text-xl font-semibold mb-2 text-color-2">Prof. Michael Rodriguez</h4>
+    <p className="text-sm sm:text-base text-n-3 mb-3">Cryptography Expert</p>
     <div className="text-sm text-n-4">18 articles • 8K+ views</div>
   </div>
   
-  <div className="p-4 md:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
-    <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-red-600 to-pink-600 rounded-full flex items-center justify-center text-white font-bold text-lg md:text-xl mx-auto mb-4">
+  <div className="p-4 sm:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl text-center sm:col-span-2 lg:col-span-1">
+    <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-red-600 to-pink-600 rounded-full flex items-center justify-center text-white font-bold text-lg sm:text-xl mx-auto mb-4">
       AP
     </div>
-    <h4 className="h6 mb-2 text-color-3">Dr. Aisha Patel</h4>
-    <p className="body-2 text-n-3 mb-3 text-sm md:text-base">Zero Trust Architect</p>
+    <h4 className="text-lg sm:text-xl font-semibold mb-2 text-color-3">Dr. Aisha Patel</h4>
+    <p className="text-sm sm:text-base text-n-3 mb-3">Zero Trust Architect</p>
     <div className="text-sm text-n-4">22 articles • 12K+ views</div>
   </div>
 </div>
@@ -307,21 +306,21 @@ import { Calendar, User, Tag, TrendingUp, MessageCircle, Heart, Share } from 'lu
 
 Stay updated with the latest cybersecurity insights and research:
 
-<div className="p-6 md:p-8 bg-gradient-to-br from-purple-900/30 to-cyan-900/30 backdrop-blur-sm border border-n-6/50 rounded-2xl text-center my-12">
-  <h3 className="h4 mb-4 text-gradient bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
+<div className="p-4 sm:p-6 md:p-8 bg-gradient-to-br from-purple-900/30 to-cyan-900/30 backdrop-blur-sm border border-n-6/50 rounded-2xl text-center my-8 md:my-12">
+  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-gradient bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
     Weekly Security Digest
   </h3>
-  <p className="body-2 text-n-3 mb-6 max-w-md mx-auto text-sm md:text-base">
+  <p className="text-sm sm:text-base text-n-3 mb-6 max-w-md mx-auto">
     Get the latest cybersecurity insights, research findings, and community updates delivered to your inbox every week.
   </p>
   <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
     <input
       type="email"
       placeholder="Enter your email"
-      className="flex-1 px-4 py-3 bg-n-7/50 backdrop-blur-sm border border-n-6/50 rounded-lg text-n-1 placeholder-n-4 focus:outline-none focus:border-color-1 transition-all duration-300 text-sm md:text-base"
+      className="flex-1 px-4 py-3 bg-n-7/50 backdrop-blur-sm border border-n-6/50 rounded-lg text-n-1 placeholder-n-4 focus:outline-none focus:border-color-1 transition-all duration-300 text-sm sm:text-base"
     />
     <Button 
-      className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700"
+      className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 w-full sm:w-auto"
       size="md"
     >
       Subscribe
@@ -340,13 +339,13 @@ Share your cybersecurity expertise with our global community:
 
 <div className="text-center mt-8 md:mt-12">
   <motion.div
-    className="inline-block"
+    className="inline-block w-full sm:w-auto"
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
   >
     <Button 
       href="/join" 
-      className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700"
+      className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 w-full sm:w-auto"
       size="lg"
     >
       Start Writing
@@ -355,4 +354,3 @@ Share your cybersecurity expertise with our global community:
 </div>
 
 </MDXLayout>
-```

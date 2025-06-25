@@ -1,4 +1,3 @@
-```mdx
 import MDXLayout from '../components/MDXLayout'
 import Button from '../components/Button'
 import { motion } from 'framer-motion'
@@ -10,33 +9,33 @@ import { Github, ExternalLink, Star, Users, Code, Shield, Brain, Zap } from 'luc
 >
 
 <motion.div 
-  className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-12"
+  className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6 mb-8 md:mb-12"
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ delay: 0.3 }}
 >
-  <div className="p-4 md:p-6 bg-gradient-to-br from-purple-900/20 to-transparent backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
-    <Code className="w-8 h-8 md:w-10 md:h-10 text-purple-400 mx-auto mb-2 md:mb-3" />
-    <div className="text-xl md:text-2xl font-bold text-color-1 mb-1">500+</div>
-    <div className="text-xs md:text-sm text-n-3">Active Projects</div>
+  <div className="p-3 sm:p-4 md:p-6 bg-gradient-to-br from-purple-900/20 to-transparent backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
+    <Code className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-purple-400 mx-auto mb-2 md:mb-3" />
+    <div className="text-lg sm:text-xl md:text-2xl font-bold text-color-1 mb-1">500+</div>
+    <div className="text-xs sm:text-sm text-n-3">Active Projects</div>
   </div>
   
-  <div className="p-4 md:p-6 bg-gradient-to-br from-cyan-900/20 to-transparent backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
-    <Users className="w-8 h-8 md:w-10 md:h-10 text-cyan-400 mx-auto mb-2 md:mb-3" />
-    <div className="text-xl md:text-2xl font-bold text-color-2 mb-1">2K+</div>
-    <div className="text-xs md:text-sm text-n-3">Contributors</div>
+  <div className="p-3 sm:p-4 md:p-6 bg-gradient-to-br from-cyan-900/20 to-transparent backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
+    <Users className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-cyan-400 mx-auto mb-2 md:mb-3" />
+    <div className="text-lg sm:text-xl md:text-2xl font-bold text-color-2 mb-1">2K+</div>
+    <div className="text-xs sm:text-sm text-n-3">Contributors</div>
   </div>
   
-  <div className="p-4 md:p-6 bg-gradient-to-br from-green-900/20 to-transparent backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
-    <Star className="w-8 h-8 md:w-10 md:h-10 text-green-400 mx-auto mb-2 md:mb-3" />
-    <div className="text-xl md:text-2xl font-bold text-color-3 mb-1">50K+</div>
-    <div className="text-xs md:text-sm text-n-3">GitHub Stars</div>
+  <div className="p-3 sm:p-4 md:p-6 bg-gradient-to-br from-green-900/20 to-transparent backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
+    <Star className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-green-400 mx-auto mb-2 md:mb-3" />
+    <div className="text-lg sm:text-xl md:text-2xl font-bold text-color-3 mb-1">50K+</div>
+    <div className="text-xs sm:text-sm text-n-3">GitHub Stars</div>
   </div>
   
-  <div className="p-4 md:p-6 bg-gradient-to-br from-yellow-900/20 to-transparent backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
-    <Shield className="w-8 h-8 md:w-10 md:h-10 text-yellow-400 mx-auto mb-2 md:mb-3" />
-    <div className="text-xl md:text-2xl font-bold text-color-4 mb-1">24/7</div>
-    <div className="text-xs md:text-sm text-n-3">Active Development</div>
+  <div className="p-3 sm:p-4 md:p-6 bg-gradient-to-br from-yellow-900/20 to-transparent backdrop-blur-sm border border-n-6/30 rounded-xl text-center">
+    <Shield className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-yellow-400 mx-auto mb-2 md:mb-3" />
+    <div className="text-lg sm:text-xl md:text-2xl font-bold text-color-4 mb-1">24/7</div>
+    <div className="text-xs sm:text-sm text-n-3">Active Development</div>
   </div>
 </motion.div>
 
@@ -57,7 +56,7 @@ A comprehensive framework for automated vulnerability detection using machine le
 <div className="flex flex-col sm:flex-row gap-3 md:gap-4 my-4">
   <Button 
     href="#" 
-    className="bg-n-7 hover:bg-n-6 text-n-1"
+    className="bg-n-7 hover:bg-n-6 text-n-1 w-full sm:w-auto"
     size="md"
   >
     <Github className="w-4 h-4 mr-2" />
@@ -65,7 +64,7 @@ A comprehensive framework for automated vulnerability detection using machine le
   </Button>
   <Button 
     href="#" 
-    className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700"
+    className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 w-full sm:w-auto"
     size="md"
   >
     <ExternalLink className="w-4 h-4 mr-2" />
@@ -88,7 +87,7 @@ Collects and analyzes threat data from multiple sources to provide actionable in
 <div className="flex flex-col sm:flex-row gap-3 md:gap-4 my-4">
   <Button 
     href="#" 
-    className="bg-n-7 hover:bg-n-6 text-n-1"
+    className="bg-n-7 hover:bg-n-6 text-n-1 w-full sm:w-auto"
     size="md"
   >
     <Github className="w-4 h-4 mr-2" />
@@ -96,7 +95,7 @@ Collects and analyzes threat data from multiple sources to provide actionable in
   </Button>
   <Button 
     href="#" 
-    className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700"
+    className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 w-full sm:w-auto"
     size="md"
   >
     <ExternalLink className="w-4 h-4 mr-2" />
@@ -119,7 +118,7 @@ Research-focused project exploring the intersection of deep learning and cyberse
 <div className="flex flex-col sm:flex-row gap-3 md:gap-4 my-4">
   <Button 
     href="#" 
-    className="bg-n-7 hover:bg-n-6 text-n-1"
+    className="bg-n-7 hover:bg-n-6 text-n-1 w-full sm:w-auto"
     size="md"
   >
     <Github className="w-4 h-4 mr-2" />
@@ -127,7 +126,7 @@ Research-focused project exploring the intersection of deep learning and cyberse
   </Button>
   <Button 
     href="#" 
-    className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700"
+    className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 w-full sm:w-auto"
     size="md"
   >
     <ExternalLink className="w-4 h-4 mr-2" />
@@ -137,32 +136,32 @@ Research-focused project exploring the intersection of deep learning and cyberse
 
 ## Project Categories
 
-<div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 my-8">
-  <div className="p-4 md:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl">
-    <Shield className="w-6 h-6 md:w-8 md:h-8 text-purple-400 mb-3" />
-    <h4 className="h6 mb-2 text-color-1">Security Tools</h4>
-    <p className="body-2 text-n-3 mb-4 text-sm md:text-base">Penetration testing frameworks, vulnerability scanners, and security automation tools</p>
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 my-6 md:my-8">
+  <div className="p-4 sm:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl">
+    <Shield className="w-6 h-6 sm:w-8 sm:h-8 text-purple-400 mb-3" />
+    <h4 className="text-lg sm:text-xl font-semibold mb-2 text-color-1">Security Tools</h4>
+    <p className="text-sm sm:text-base text-n-3 mb-4">Penetration testing frameworks, vulnerability scanners, and security automation tools</p>
     <div className="text-sm text-n-4">150+ projects</div>
   </div>
   
-  <div className="p-4 md:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl">
-    <Brain className="w-6 h-6 md:w-8 md:h-8 text-cyan-400 mb-3" />
-    <h4 className="h6 mb-2 text-color-2">AI Security</h4>
-    <p className="body-2 text-n-3 mb-4 text-sm md:text-base">Machine learning models for threat detection and automated security analysis</p>
+  <div className="p-4 sm:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl">
+    <Brain className="w-6 h-6 sm:w-8 sm:h-8 text-cyan-400 mb-3" />
+    <h4 className="text-lg sm:text-xl font-semibold mb-2 text-color-2">AI Security</h4>
+    <p className="text-sm sm:text-base text-n-3 mb-4">Machine learning models for threat detection and automated security analysis</p>
     <div className="text-sm text-n-4">75+ projects</div>
   </div>
   
-  <div className="p-4 md:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl">
-    <Code className="w-6 h-6 md:w-8 md:h-8 text-green-400 mb-3" />
-    <h4 className="h6 mb-2 text-color-3">Research</h4>
-    <p className="body-2 text-n-3 mb-4 text-sm md:text-base">Academic research projects, proof-of-concepts, and experimental security techniques</p>
+  <div className="p-4 sm:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl">
+    <Code className="w-6 h-6 sm:w-8 sm:h-8 text-green-400 mb-3" />
+    <h4 className="text-lg sm:text-xl font-semibold mb-2 text-color-3">Research</h4>
+    <p className="text-sm sm:text-base text-n-3 mb-4">Academic research projects, proof-of-concepts, and experimental security techniques</p>
     <div className="text-sm text-n-4">100+ projects</div>
   </div>
   
-  <div className="p-4 md:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl">
-    <Zap className="w-6 h-6 md:w-8 md:h-8 text-yellow-400 mb-3" />
-    <h4 className="h6 mb-2 text-color-4">Infrastructure</h4>
-    <p className="body-2 text-n-3 mb-4 text-sm md:text-base">DevSecOps tools, security monitoring platforms, and infrastructure security</p>
+  <div className="p-4 sm:p-6 bg-n-7/50 backdrop-blur-sm border border-n-6/30 rounded-xl">
+    <Zap className="w-6 h-6 sm:w-8 sm:h-8 text-yellow-400 mb-3" />
+    <h4 className="text-lg sm:text-xl font-semibold mb-2 text-color-4">Infrastructure</h4>
+    <p className="text-sm sm:text-base text-n-3 mb-4">DevSecOps tools, security monitoring platforms, and infrastructure security</p>
     <div className="text-sm text-n-4">175+ projects</div>
   </div>
 </div>
@@ -191,13 +190,13 @@ Ready to contribute to the future of cybersecurity? Join our community and start
 
 <div className="text-center mt-8 md:mt-12">
   <motion.div
-    className="inline-block"
+    className="inline-block w-full sm:w-auto"
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
   >
     <Button 
       href="https://github.com/codesec-community" 
-      className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700"
+      className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 w-full sm:w-auto"
       size="lg"
     >
       <Github className="w-5 h-5 mr-2" />
@@ -207,4 +206,3 @@ Ready to contribute to the future of cybersecurity? Join our community and start
 </div>
 
 </MDXLayout>
-```
