@@ -75,7 +75,7 @@ const Community = () => {
               <h4 className="h6 mb-2 text-color-1">Ready to contribute?</h4>
               <p className="body-2 text-n-3">Join our community and start making an impact today</p>
             </div>
-            <button className="px-6 py-3 bg-gradient-to-r from-purple-600 to-cyan-600 text-white rounded-lg font-semibold hover:from-purple-700 hover:to-cyan-700 transition-all duration-300">
+            <button className="px-6 py-3 bg-n-7 hover:bg-n-6 border border-n-6 hover:border-n-5 text-white rounded-lg font-semibold transition-all duration-300">
               Get Started
             </button>
           </div>

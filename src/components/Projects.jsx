@@ -29,7 +29,7 @@ const Projects = () => {
               onClick={() => setActiveFilter(category)}
               className={`px-6 py-3 rounded-full font-code text-sm font-semibold transition-all duration-300 ${
                 activeFilter === category
-                  ? "bg-gradient-to-r from-purple-600 to-cyan-600 text-white shadow-lg"
+                  ? "bg-n-7 border border-n-6 text-white"
                   : "bg-n-8/50 backdrop-blur-sm border border-n-6/50 text-n-3 hover:text-n-1 hover:border-n-6"
               }`}
             >
@@ -87,7 +87,7 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-3">
-                  <button className="flex-1 py-2 px-4 bg-gradient-to-r from-purple-600 to-cyan-600 text-white text-sm font-semibold rounded-lg hover:from-purple-700 hover:to-cyan-700 transition-all duration-300">
+                  <button className="flex-1 py-2 px-4 bg-n-7 hover:bg-n-6 border border-n-6 hover:border-n-5 text-white text-sm font-semibold rounded-lg transition-all duration-300">
                     View Project
                   </button>
                   <button className="py-2 px-4 bg-n-7 hover:bg-n-6 text-n-1 text-sm font-semibold rounded-lg transition-colors duration-300">
@@ -101,7 +101,7 @@ const Projects = () => {
 
         {/* View All Projects CTA */}
         <div className="text-center">
-          <button className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-cyan-600 text-white font-semibold rounded-xl hover:from-purple-700 hover:to-cyan-700 transition-all duration-300 shadow-lg">
+          <button className="inline-flex items-center gap-2 px-8 py-4 bg-n-7 hover:bg-n-6 border border-n-6 hover:border-n-5 text-white font-semibold rounded-xl transition-all duration-300 shadow-lg">
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 000 2h6a1 1 0 100-2H7z" clipRule="evenodd" />
             </svg>

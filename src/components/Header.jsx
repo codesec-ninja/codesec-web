@@ -103,7 +103,7 @@ const Header = () => {
         </button>
         
         <Button 
-          className="hidden lg:flex bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700" 
+          className="hidden lg:flex bg-n-7 hover:bg-n-6 border border-n-6 hover:border-n-5" 
           onClick={() => navigate('/join')}
           size="md"
         >

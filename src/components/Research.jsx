@@ -50,7 +50,7 @@ const Research = () => {
                   </p>
 
                   <div className="flex gap-3">
-                    <button className="flex-1 py-3 px-4 bg-gradient-to-r from-purple-600/20 to-cyan-600/20 border border-purple-500/30 text-color-1 text-sm font-semibold rounded-lg hover:from-purple-600/30 hover:to-cyan-600/30 transition-all duration-300">
+                    <button className="flex-1 py-3 px-4 bg-n-7 hover:bg-n-6 border border-n-6 hover:border-n-5 text-color-1 text-sm font-semibold rounded-lg transition-all duration-300">
                       View Research
                     </button>
                     <button className="py-3 px-4 bg-n-7 hover:bg-n-6 text-n-1 text-sm font-semibold rounded-lg transition-colors duration-300">
@@ -99,7 +99,7 @@ const Research = () => {
             <p className="body-2 text-n-3 mb-6 max-w-md">
               Collaborate with leading researchers and contribute to groundbreaking cybersecurity and AI research.
             </p>
-            <button className="px-8 py-4 bg-gradient-to-r from-purple-600 to-cyan-600 text-white font-semibold rounded-xl hover:from-purple-700 hover:to-cyan-700 transition-all duration-300 shadow-lg">
+            <button className="px-8 py-4 bg-n-7 hover:bg-n-6 border border-n-6 hover:border-n-5 text-white font-semibold rounded-xl transition-all duration-300 shadow-lg">
               Start Contributing
             </button>
           </div>
